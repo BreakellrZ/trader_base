@@ -27,7 +27,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-fv8w1v6)x8@y@+%by@+)u@a9r8-oxw4(p(k0^5c2pi)y=)ff0f'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = [
     'https://breakellrz-traderbase-lq8g2adtogs.ws-eu114.gitpod.io/',
