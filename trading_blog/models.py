@@ -14,4 +14,5 @@ class Journal(models.Model):
     content = models.TextField()
     date = models.DateField(auto_now=True)
     status = models.IntegerField(choices=STATUS, default=0)
+    excerpt = models.TextField(blank=True)
     #Image model when I get to cloudinary
