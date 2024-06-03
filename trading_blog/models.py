@@ -12,6 +12,6 @@ class Journal(models.Model):
         User, on_delete=models.CASCADE, related_name="trading_blog_posts"
     )
     content = models.TextField()
-    date = models.DateField(auto_now=True, auto_now_add=True)
+    date = models.DateField(auto_now=True)
     status = models.IntegerField(choices=STATUS, default=0)
     #Image model when I get to cloudinary
