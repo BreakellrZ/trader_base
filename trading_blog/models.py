@@ -16,3 +16,12 @@ class Journal(models.Model):
     status = models.IntegerField(choices=STATUS, default=0)
     excerpt = models.TextField(blank=True)
     #Image model when I get to cloudinary
+
+class Comment(models.Model):
+    post = models.ForeignKey(
+        Journal, on_delete=models.CASCADE, related_name="journal_comments")
+    author = models.ForeignKey(
+        User, on_delete=models.CASCADE, related_name="commenter")
+    body = models.TextField()
+    approved = models.BooleanField(default=False)
+    created_on = models.DateTimeField(auto_now_add=True)
