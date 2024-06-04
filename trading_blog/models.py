@@ -39,7 +39,7 @@ class Journal(models.Model):
     news = models.CharField(max_length=50, blank=True)
 
     def __str__(self):
-        return f"This post contains {self.symbol}"
+        return f"This trade contains {self.watchlist} - {self.news_events}"
 
 
     #Image model when I get to cloudinary
