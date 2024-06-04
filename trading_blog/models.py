@@ -38,8 +38,12 @@ class Journal(models.Model):
     news_events = models.IntegerField(choices=NEWS_EVENTS, default=0)
     news = models.CharField(max_length=50, blank=True)
 
+    class Meta:
+        ordering = ["-date"]
+
+
     def __str__(self):
-        return f"This trade contains {self.watchlist} - {self.news_events}"
+        return f"This is a  {self.title} post which includes - {self.watchlist} & {self.news_events}"
 
 
     #Image model when I get to cloudinary
@@ -52,3 +56,10 @@ class Comment(models.Model):
     body = models.TextField()
     approved = models.BooleanField(default=False)
     created_on = models.DateTimeField(auto_now_add=True)
+
+    class Meta:
+        ordering = ["-created_on"]
+
+
+    def __str__(self):
+        return f"This comment is from the {self.post} post - - The Author is {self.author}"

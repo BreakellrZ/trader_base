@@ -16,8 +16,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-from trading_blog import views as index_views
-from home import views as home_views
+
 
 urlpatterns = [
     path('', home_views.home, name='home'),
