@@ -3,5 +3,10 @@ from django.views import generic
 
 
 # Create your views here.
-class HomePage(generic.ListView):
-    template_name = "index.html"
+def home(request):
+
+    return render(
+        request,
+        "index.html",
+        {"home": home},
+    )
