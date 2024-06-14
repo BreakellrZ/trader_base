@@ -1,7 +1,16 @@
 section {
-    padding: 60px 0;
+   padding: 60px;
 }
 
 #start {
-    background-color: rgb(255, 255, 255);
+    height:100vh;
+    background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
+    
 }
+
+#middle{}
+
+#line{
+    color:black;
+}
+
