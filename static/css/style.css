@@ -8,6 +8,7 @@ section {
     isolation: isolate;
 }
 
+/* Part Code from Kevin Powell YouTube video on how to set opacity */
 #start ::after {
     content:"";
     position: absolute;
