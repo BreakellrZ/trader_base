@@ -4,13 +4,44 @@ section {
 
 #start {
     height:100vh;
-    background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
+    position:relative;
+    isolation: isolate;
+}
+
+#start ::after {
+    content:"";
+    position: absolute;
+    inset:0;
+    z-index:-1;
+    opacity: .2;
+    filter:brightness(0.4);
+    
+    background: url(/static/css/img/c.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+
+
+#faq{
+    background: url(/static/css/img/wow.jpg) no-repeat center center fixed;
+    background-size: cover;
     
 }
 
-#middle{}
-
 #line{
     color:black;
+    margin:15px;
+}
+
+.card{
+    height: 100px;
+}
+
+h1 {
+    font-weight:bold;
+}
+
+.hr{
+    color:black;
+    font-weight:bold;
 }
 
