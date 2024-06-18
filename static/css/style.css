@@ -2,6 +2,17 @@ section {
    padding: 60px;
 }
 
+hr{
+    
+    border: 3px solid rgb(0, 0, 0);
+    border-radius:3px;
+}
+
+h1 {
+    font-weight:bold;
+}
+
+
 #start {
     height:100vh;
     position:relative;
@@ -17,15 +28,14 @@ section {
     opacity: .2;
     filter:brightness(0.4);
     
-    background: url(/static/css/img/c.jpg) no-repeat center center fixed;
+    background: url(/static/css/img/main_hero.jpg) no-repeat center center fixed;
     background-size: cover;
 }
 
 
 #faq{
-    background: url(/static/css/img/wow.jpg) no-repeat center center fixed;
-    background-size: cover;
-    
+    background-color: rgb(33, 37, 41)
+ 
 }
 
 #line{
@@ -37,12 +47,5 @@ section {
     height: 100px;
 }
 
-h1 {
-    font-weight:bold;
-}
 
-.hr{
-    color:black;
-    font-weight:bold;
-}
 
