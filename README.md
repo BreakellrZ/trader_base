@@ -1,6 +1,6 @@
-# ***TraderBase - Colin Breakell - Portfolio Project 4***
+# ***TraderBase - Colin Breakell - Portfolio Project 4 ***
 
-# **1. Key project information**
+- TraderBase is a website for Forex traders who would like to follow along with a Funded ICT Trader. I decided to make this website for all ICT traders out there who would like to gain information and knowledge, while following my journey via a Journal blog. In my Journal I will be providing daily and weekly analysis. Each blog post will contain chart examples and text explaining what my thought proccess is for each day and each week. I will be showing trade examples, useful information, and trading models for users who signup. I wanted to give a 'Money Heist' vibe to my website beacuse I believe trading is like a money heist. We are entering the market ready to start a heist and take money out of the market for ourselves.
 
 
 
