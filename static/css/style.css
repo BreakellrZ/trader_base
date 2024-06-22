@@ -43,6 +43,24 @@ h1 {
     margin:15px;
 }
 
+#journal_hero{
+    height:50vh;
+    position:relative;
+    isolation: isolate;
+}
+
+#journal_hero ::after {
+    content:"";
+    position: absolute;
+    inset:0;
+    z-index:-1;
+    opacity: .2;
+    filter:brightness(0.4);
+    
+    background: url(/static/css/img/money_heist.png) no-repeat center center fixed;
+    background-size: cover;
+}
+
 .card{
     height: 100px;
 }
