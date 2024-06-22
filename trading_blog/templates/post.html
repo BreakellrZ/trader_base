@@ -14,12 +14,20 @@
 
 <section>
     <div class="container">
-        <h1>Posts list</h1>
-        {% for post in object_list %}
-        <h2>{{post.title}}</h2>
-        <p>{{post.excerpt}}</p>
-        <p>Author: {{post.author}}</p>
-        {% endfor %}
+        <div class="row">
+            {% for post in object_list %}
+            <div class="col-md-4">
+                <div class="card h-100 shadow-lg">
+                    <div class="card-body">
+                      <h5 class="card-title text-primary">{{post.title}}</h5>
+                      <p class="card-text">{{post.excerpt}}</p>
+                      <a href="#" class="btn btn-primary">Go here</a>
+                    </div>
+                  </div>
+                  </div>
+                  {% endfor %}
+    
+    </div>
     </div>
 </section>
 
