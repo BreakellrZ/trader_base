@@ -17,9 +17,9 @@
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
 </head>
 <body>
-    
+    <header>
     <!-- Navbar -->
-     <nav class="navbar navbar-expand-md navbar-light">
+     <nav class="navbar navbar-expand-md navbar-light ">
         <div class="container">
             <a href="" class="navbar-brand">
                 <i class="fa-solid fa-money-bill-trend-up"></i>
@@ -55,15 +55,16 @@
             </div>
         </div>
      </nav>
+    </header>
 
     <!-- Main -->
      {% block content %}
      {% endblock content %}
 
-     <section>
+  
         <footer>
           <div class="container">
-            <div class="row justify-content-center align-items-center text-center border-bottom border-primary">
+            <div class="row justify-content-center align-items-center text-center">
               <div class="col-md-4 line"> <p class=" text-danger">This website is for educational purposes only. Do not take this as real financial advice. </p></div>
               
               <div class="col-md-4 my-3 line"> <i class="fa-solid fa-copyright"> TraderBase 2024 </i>
@@ -75,7 +76,7 @@
             </div>
           </div>
         </footer>
-      </section>
+      
       
         
     

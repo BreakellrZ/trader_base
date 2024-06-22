@@ -57,7 +57,7 @@ h1 {
     opacity: .2;
     filter:brightness(0.4);
     
-    background: url(/static/css/img/money_heist.png) no-repeat center center fixed;
+    background: url(/static/css/img/journal_hero.png) no-repeat center center fixed;
     background-size: cover;
 }
 
