@@ -48,7 +48,7 @@ h1 {
 }
 
 #journal_hero{
-    height:100vh;
+    height:50vh;
     position:relative;
     isolation: isolate;
 }
