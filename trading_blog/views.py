@@ -7,3 +7,4 @@ from .models import Journal
 class PostList(generic.ListView):
     queryset = Journal.objects.all().order_by("-date")
     template_name = "post.html"
+    paginate_by = 3

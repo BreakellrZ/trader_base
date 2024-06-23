@@ -34,7 +34,7 @@ h1 {
 
 
 #faq{
-    background-color: rgb(33, 37, 41)
+    background-color: rgb(33, 37, 41);
  
 }
 
@@ -43,8 +43,12 @@ h1 {
     margin:15px;
 }
 
+#journal{
+    background: rgb(33,37,41);
+}
+
 #journal_hero{
-    height:50vh;
+    height:100vh;
     position:relative;
     isolation: isolate;
 }
@@ -61,9 +65,7 @@ h1 {
     background-size: cover;
 }
 
-.card{
-    height: 100px;
-}
+
 
 @media (max-width: 752px){
 .line {
