@@ -22,7 +22,7 @@
                       <h5 class="card-header text-primary "><strong>{{post.title}}</strong></h5>
                       <p class="card-text text-muted my-3"><em>{{post.excerpt}}</em></p>
                       <div class="card-footer">
-                      <a href="#" class="btn btn-md btn-dark d-flex justify-content-center text-center">View Journal Entry</a>
+                      <a href="{% url 'post_detail' post.slug %}" class=" post-link btn btn-md btn-dark d-flex justify-content-center text-center">View Journal Entry</a>
                     </div>
                     </div>
                   </div>

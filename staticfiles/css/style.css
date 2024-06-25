@@ -34,7 +34,8 @@ h1 {
 
 
 #faq{
-    background-color: rgb(33, 37, 41);
+    background-color: #e8e8e8;
+background-image: linear-gradient(225deg, #e8e8e8 0%, #966c6e 33%, #605e5e 66%, #000000 100%);
  
 }
 
@@ -44,11 +45,16 @@ h1 {
 }
 
 #journal{
-    background: rgb(33,37,41);
+    background-color: #e8e8e8;
+background-image: linear-gradient(225deg, #e8e8e8 0%, #966c6e 33%, #605e5e 66%, #000000 100%);
+
+     /*background-color: #e8e8e8;
+    background-image: linear-gradient(225deg, #e8e8e8 0%, #966c6e 33%, #000000 66%, #000000 100%);*/
+    
 }
 
 #journal_hero{
-    height:100vh;
+    height:80vh;
     position:relative;
     isolation: isolate;
 }
