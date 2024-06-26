@@ -1,5 +1,6 @@
 from django.db import models
 from django.contrib.auth.models import User
+from cloudinary.models import CloudinaryField
 
 STATUS = ((0, "Draft"), (1, "Published"))
 
@@ -37,6 +38,7 @@ class Journal(models.Model):
     watchlist = models.CharField(max_length=50, choices=WATCHLIST, default="dxy")
     news_events = models.IntegerField(choices=NEWS_EVENTS, default=0)
     news = models.CharField(max_length=50, blank=True)
+    chart_image = CloudinaryField('image', default='placeholder')
 
     class Meta:
         ordering = ["-date"]

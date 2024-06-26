@@ -11,9 +11,21 @@
         </div>
     </div>
     <hr>
+
     <div class="row my-3">
-        <div class="col text-light"> <p class="text-light">{{ post.content | safe }} </p></div>
+        <div class="col text-light"> <p class="text-light">{{ post.content | safe }} </p>
+        </div>
     </div>
+    <div class="row">
+        <div class="col-4">
+        {% if "placeholder" in post.chart_image.url %}
+                                <img class="img-fluid d-block rounded" src="{% static 'css/img/main_hero.jpg' %}"
+                                    alt="placeholder image">
+                                {% else %}
+                                <img class="img-fluid" src=" {{ post.chart_image.url }}" alt="{{ post.title }}">
+                                {% endif %}
+    </div>
+</div>
 </div>
 </section>
 
