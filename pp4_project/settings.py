@@ -28,12 +28,14 @@ TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')
 SECRET_KEY = os.environ.get("SECRET_KEY")
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = [
     'https://breakellrz-traderbase-lq8g2adtogs.ws-eu114.gitpod.io/',
     'localhost',
-    '.herokuapp.com'
+    '.herokuapp.com',
+    'https://favicon.io/favicon-converter/',
+    '8000-breakellrz-traderbase-8xndcc4nppc.ws.codeinstitute-ide.net',
     ]
 
 
