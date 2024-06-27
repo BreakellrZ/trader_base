@@ -10,22 +10,36 @@
             <h1 class="text-primary display-2 fw-bold"> {{ post.title }} </h1>
         </div>
     </div>
+
+    <hr>
+
+    <div class="row text-light">
+        <div class="col-md-4 gy-2"><h2> Watchlist: <span class="text-success"> {{ post.watchlist }} </span></h2>
+        </div>
+        <div class="col-md-4 gy-2"><h2>Type of News: <span class="text-success"> {{ post.news_events }}</span> </h2>
+        </div>
+        <div class="col-md-4 gy-2"> <h2> News: <span class="text-success"> {{ post.news }} </span></h2>
+        </div>
+    </div>
+
     <hr>
 
     <div class="row my-3">
         <div class="col text-light"> <p class="text-light">{{ post.content | safe }} </p>
         </div>
     </div>
-    <div class="row">
-        <div class="col-4">
-        {% if "placeholder" in post.chart_image.url %}
-                                <img class="img-fluid d-block rounded" src="{% static 'css/img/main_hero.jpg' %}"
-                                    alt="placeholder image">
-                                {% else %}
-                                <img class="img-fluid" src=" {{ post.chart_image.url }}" alt="{{ post.title }}">
-                                {% endif %}
+    <hr>
+
+    <div class="row my-3">
+        <div class="col my-4 img-fluid">
+            {% if "placeholder" in post.chart_image.url %}
+             <img class="img-responsive" src="{% static 'css/img/main_hero.jpg' %}" alt="placeholder img">
+             {% else %}
+             <img src="{{ post.chart_image.url }}" class="img-responsive img-thumbnail" alt="charts img" style="width: 100%; height: auto;">
+             {% endif %}
+        </div>
+
     </div>
-</div>
 </div>
 </section>
 

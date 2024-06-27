@@ -17,10 +17,10 @@ WATCHLIST = (
 )
 
 NEWS_EVENTS = (
-    (0, "None"),
-    (1, "High Impact News"),
-    (2, "Medium Impact News"),
-    (3, "Low Impact News"),
+    ("None", "None"),
+    ("High Impact News", "H"),
+    ("Medium Impact News", "M"),
+    ("Low Impact News", "L"),
 )
 
 
@@ -36,7 +36,7 @@ class Journal(models.Model):
     status = models.IntegerField(choices=STATUS, default=0)
     excerpt = models.TextField(blank=True)
     watchlist = models.CharField(max_length=50, choices=WATCHLIST, default="dxy")
-    news_events = models.IntegerField(choices=NEWS_EVENTS, default=0)
+    news_events = models.CharField(choices=NEWS_EVENTS, default="None")
     news = models.CharField(max_length=50, blank=True)
     chart_image = CloudinaryField('image', default='placeholder')
 
