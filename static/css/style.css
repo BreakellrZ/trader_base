@@ -92,6 +92,23 @@ background-image: linear-gradient(225deg, #e8e8e8 0%, #966c6e 33%, #605e5e 66%, 
     border:1px dashed black;
 }
 
+#login {
+    height:100vh;
+    position:relative;
+    isolation: isolate;
+}
+
+#login ::after {
+    content:"";
+    position: absolute;
+    inset:0;
+    z-index:-1;
+    opacity: .2;
+    filter:brightness(0.4);
+    
+    background: url(/static/css/img/login_hero.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
 
 @media (max-width: 752px){
 .line {
