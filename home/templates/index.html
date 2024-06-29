@@ -4,6 +4,13 @@
 
 
 <section id="start">
+  <div class="">
+    {% if user.is_authenticated %}
+    <p class="text-center text-md-end text-success"><u>You are logged in as {{ user }}</u></p>
+    {% else %}
+    <p class="text-end text-center text-md-end text-success">You are not logged in</p>
+    {% endif %}
+    </div>
     <div class="container d-flex justify-content-center align-items-center h-100">
         <div class="row justify-content-center align-items-center mt-5 h-100">
             <div class="col-lg-5 text-center">

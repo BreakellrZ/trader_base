@@ -3,6 +3,11 @@
 {% load static %}
 
 <section id="journal_hero">
+    {% if user.is_authenticated %}
+    <p class="text-center text-md-end text-success"><u>You are logged in as {{ user }}</u></p>
+    {% else %}
+    <p class="text-end text-center text-md-end text-success">You are not logged in</p>
+    {% endif %}
     <div class="container d-flex justify-content-center align-items-center h-100">
         <div class="row justify-content-center">
             <div class="col-sm-5 text-center">
