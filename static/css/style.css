@@ -48,8 +48,7 @@ background-image: linear-gradient(225deg, #e8e8e8 0%, #966c6e 33%, #605e5e 66%, 
 }
 
 #journal{
-    background-color: #e8e8e8;
-    background-image: linear-gradient(225deg, #e8e8e8 0%, #966c6e 33%, #605e5e 66%, #000000 100%);
+    background:black;
 
 }
 
@@ -156,6 +155,10 @@ background-image: linear-gradient(225deg, #e8e8e8 0%, #966c6e 33%, #605e5e 66%, 
 
 @media (max-height: 780px){
     #start {
+        height:auto;
+    }
+
+    #journal_hero{
         height:auto;
     }
 
