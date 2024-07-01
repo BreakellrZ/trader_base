@@ -49,11 +49,8 @@ background-image: linear-gradient(225deg, #e8e8e8 0%, #966c6e 33%, #605e5e 66%, 
 
 #journal{
     background-color: #e8e8e8;
-background-image: linear-gradient(225deg, #e8e8e8 0%, #966c6e 33%, #605e5e 66%, #000000 100%);
+    background-image: linear-gradient(225deg, #e8e8e8 0%, #966c6e 33%, #605e5e 66%, #000000 100%);
 
-     /*background-color: #e8e8e8;
-    background-image: linear-gradient(225deg, #e8e8e8 0%, #966c6e 33%, #000000 66%, #000000 100%);*/
-    
 }
 
 #journal_hero{
@@ -75,7 +72,18 @@ background-image: linear-gradient(225deg, #e8e8e8 0%, #966c6e 33%, #605e5e 66%, 
 }
 
 #journal_detail{
-    height:100vh;
+    position:relative;
+    isolation: isolate;
+}
+
+#journal_detail ::after {
+    content:"";
+    position: absolute;
+    inset:0;
+    z-index:-1;
+    opacity: .2;
+    filter:brightness(0.4);
+    
     background: url(/static/css/img/post_detail_hero.jpg) no-repeat center center fixed;
     background-size: cover;
 }
@@ -83,11 +91,94 @@ background-image: linear-gradient(225deg, #e8e8e8 0%, #966c6e 33%, #605e5e 66%, 
 #card_hr {
     border:1px dashed black;
 }
+
+#login {
+    height:100vh;
+    position:relative;
+    isolation: isolate;
+}
+
+#login ::after {
+    content:"";
+    position: absolute;
+    inset:0;
+    z-index:-1;
+    opacity: .2;
+    filter:brightness(0.4);
+    
+    background: url(/static/css/img/login_hero.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+
+#logout {
+    height:100vh;
+    position:relative;
+    isolation: isolate;
+}
+
+#logout ::after {
+    content:"";
+    position: absolute;
+    inset:0;
+    z-index:-1;
+    opacity: .2;
+    filter:brightness(0.4);
+    
+    background: url(/static/css/img/logout_hero.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+
+#sign_up {
+    height:100vh;
+    position:relative;
+    isolation: isolate;
+}
+
+#sign_up ::after {
+    content:"";
+    position: absolute;
+    inset:0;
+    z-index:-1;
+    opacity: .2;
+    filter:brightness(0.4);
+    
+    background: url(/static/css/img/sign_up_hero.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+
+
 @media (max-width: 752px){
 .line {
     border-bottom: solid 2px;
 }
 }
 
+
+@media (max-height: 780px){
+    #start {
+        height:auto;
+    }
+
+    #login {
+        height:80vh;
+    }
+
+    #logout {
+        height:80vh;
+    }
+
+    #sign_up {
+        height:auto;
+    }
+
+   
+    }
+
+    @media (max-height: 420px){
+        #login {
+            height:auto;
+        }
+    }
+    
 
 
