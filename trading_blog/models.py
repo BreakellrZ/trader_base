@@ -48,8 +48,6 @@ class Journal(models.Model):
         return f"This is a  {self.title} post which includes - {self.watchlist} & {self.news_events}"
 
 
-    #Image model when I get to cloudinary
-
 class Comment(models.Model):
     post = models.ForeignKey(
         Journal, on_delete=models.CASCADE, related_name="journal_comments")
