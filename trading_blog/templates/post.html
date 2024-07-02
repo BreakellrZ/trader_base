@@ -2,24 +2,17 @@
 {% block content %}
 {% load static %}
 
+
+
 <section id="journal_hero">
     {% if user.is_authenticated %}
     <p class="text-center text-md-end text-success"><u>You are logged in as {{ user }}</u></p>
     {% else %}
     <p class="text-end text-center text-md-end text-success">You are not logged in</p>
     {% endif %}
-    <div class="container d-flex justify-content-center align-items-center h-100">
-        <div class="row justify-content-center">
-            <div class="col-sm-5 text-center">
-                <h1 class="display-1 fw-bold text-white text-uppercase "> <strong> Trading Journal</strong></h1>
-            </div>
-        </div>
-    </div>
-  
-</section>
-
-<section id="journal">
-    <div class="container">
+    <div class="container justify-content-center align-items-center h-100">
+        <h1 class="text-light text-center display-1 fw-bold">TRADING JOURNAL</h1>
+        <hr>
         <div class="row">
             {% for post in object_list %}
             <div class="col-lg-4 gx-md-5 my-4">
@@ -28,7 +21,7 @@
                       <h5 class="card-header text-primary "><strong>{{post.title}}</strong></h5>
                       <p class="card-text text-muted my-3"><em>{{post.excerpt}}</em></p>
                       <hr id="card_hr">
-                      <p class="text-danger text-uppercase"> watchlist:  {{ post.watchlist }} </p>
+                      <p class="text-success text-uppercase"> watchlist:  {{ post.watchlist }} </p>
                       <div class="card-footer">
                       <a href="{% url 'post_detail' post.slug %}" class=" post-link btn btn-md btn-dark d-flex justify-content-center text-center">View Journal Entry</a>
                     </div>

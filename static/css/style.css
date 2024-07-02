@@ -47,10 +47,6 @@ background-image: linear-gradient(225deg, #e8e8e8 0%, #966c6e 33%, #605e5e 66%, 
     margin:15px;
 }
 
-#journal{
-    background:black;
-
-}
 
 #journal_hero{
     height:80vh;
@@ -66,7 +62,7 @@ background-image: linear-gradient(225deg, #e8e8e8 0%, #966c6e 33%, #605e5e 66%, 
     opacity: .2;
     filter:brightness(0.4);
     
-    background: url(/static/css/img/journal_hero.png) no-repeat center center fixed;
+    background: url(/static/css/img/journal_hero.jpg) no-repeat center center fixed;
     background-size: cover;
 }
 
