@@ -11,11 +11,17 @@ hr{
     color: aliceblue;
 }
 
+a {
+    z-index:100;
+    position: relative;
+}
+
 #start {
     height:100vh;
     position:relative;
     isolation: isolate;
 }
+
 
 /* Part Code from Kevin Powell YouTube video on how to set opacity */
 #start ::after {

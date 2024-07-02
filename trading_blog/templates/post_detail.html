@@ -34,7 +34,7 @@
     <div class="row my-3">
         <div class="col my-4 img-fluid">
             {% if "placeholder" in post.chart_image.url %}
-             <img class="img-responsive" src="{% static 'css/img/main_hero.jpg' %}" alt="placeholder img">
+             <p class="text-light">No Image needed for todays entry.</p>
              {% else %}
              <img src="{{ post.chart_image.url }}" class="img-responsive img-thumbnail" alt="charts img" style="width: 100%; height: auto;">
              {% endif %}
