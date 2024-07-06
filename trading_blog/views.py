@@ -6,8 +6,6 @@ from .models import Journal, Comment
 from .forms import CommentForm
 
 
-
-
 # Create your views here.
 class PostList(generic.ListView):
     queryset = Journal.objects.all().order_by("-date")
@@ -15,19 +13,20 @@ class PostList(generic.ListView):
     paginate_by = 3
 
 
-# Taken code from code institute I think therefore I blog walkthrough
+# code from code institute I think therefore I blog walkthrough
+# View for post_detail.html
 def post_detail(request, slug):
     """
-    Display an individual :model:`blog.Post`.
+    Display an individual :model:`trading_blog.Post`.
 
     **Context**
 
     ``post``
-        An instance of :model:`blog.Post`.
+        An instance of :model:`trading_blog.Post`.
 
     **Template:**
 
-    :template:`blog/post_detail.html`
+    :template:`trading_blog/post_detail.html`
     """
 
     queryset = Journal.objects.filter(status=1)
@@ -59,6 +58,7 @@ def post_detail(request, slug):
     )
 
 
+# View for editing comments
 def comment_edit(request, slug, comment_id):
     """
     view to edit comments
@@ -82,6 +82,7 @@ def comment_edit(request, slug, comment_id):
     return HttpResponseRedirect(reverse('post_detail', args=[slug]))
 
 
+# View for deleting comments 
 def comment_delete(request, slug, comment_id):
     """
     view to delete comment

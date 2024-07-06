@@ -2,8 +2,11 @@ from django.db import models
 from django.contrib.auth.models import User
 from cloudinary.models import CloudinaryField
 
+
+# Status if post is published or in the draft.
 STATUS = ((0, "Draft"), (1, "Published"))
 
+# Currency Watchlist 
 WATCHLIST = (
     ('eur/usd','EUR/USD'),
     ('gbp/usd','GBP/USD'),
@@ -16,6 +19,7 @@ WATCHLIST = (
     ('dxy','DXY'),
 )
 
+# Type of news events
 NEWS_EVENTS = (
     ("None", "None"),
     ("High Impact News", "H"),
@@ -25,6 +29,7 @@ NEWS_EVENTS = (
 
 
 # Create your models here.
+# Journal Model
 class Journal(models.Model):
     title = models.CharField(max_length=200, unique=True)
     slug = models.SlugField(max_length=200, unique=True)
@@ -48,6 +53,7 @@ class Journal(models.Model):
         return f"This is a  {self.title} post which includes - {self.watchlist} & {self.news_events}"
 
 
+# Comment Model
 class Comment(models.Model):
     post = models.ForeignKey(
         Journal, on_delete=models.CASCADE, related_name="journal_comments")
