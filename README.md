@@ -81,6 +81,19 @@ After decided on the strategy, the scope plane was carefully created.
 
 
 ## **5.2. Testing**
+|Epic|what the test is|Acceptance Criteria|Outcome|
+|-------------|------------------|-----------|-------|
+||||| 
+|Getting started/Organization|Have I set up my github Repository properly?|A working GitHub Repository|Works as expected|
+|Getting started/Organization|Have I created my django project?|Installed Django, created pp4_project, installed needed apps|Works as expected|
+|Getting started/Organization|Have I deployed and set up Heroku ?|Set up Heroku correctly, Deploy to Heroku, Install a production-ready webserver for Heroku (gunicorn)|Works as expected|
+|Getting started/Organization|Testing if I registered to Cloudinary and is it working as an image hosting provider for superusers?|Superusers can upload images to blog posts, Images are stored on cloudinary|Works as expected|
+|User Authentication and Authorization|Can users Register?|Be able to create a new account. Be able to create a Username and Password.|Works as expected|
+|User Authentication and Authorization|Can users Login and does an error show if unsuccessful?|Be able to login with Username and Password. Give an error message if login is unsuccessful.|Works as expected|
+|User Authentication and Authorization|Can users logout?|User can log out when needed. Have a log out link for users to press to log out. When logged out show login link instead.|Works as expected|
+|User Authentication and Authorization|Can the Journal page only be seen when a user is logged in?|Journal page is not visible and available to click if not logged in. Journal page is visible and available to click if signed in|Works as expected|
+|User Authentication and Authorization|Can users see if they are logged in or not?|Show users if they are logged in or not. Tell users who is logged in. Tell users if they are not logged in|Works as expected|
+
 
 
 ## **5.3. Bugs**
