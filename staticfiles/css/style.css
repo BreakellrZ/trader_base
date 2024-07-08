@@ -1,195 +1,198 @@
+/* Main styles */
 section {
-   padding: 60px;
+    padding: 60px;
 }
-
 
 h1 {
-    font-weight:bold;
+    font-weight: bold;
 }
 
-hr{
+hr {
     color: aliceblue;
 }
 
 a {
-    z-index:100;
+    z-index: 100;
     position: relative;
 }
 
-
+/* Button style */
 .btn {
-    z-index:99;
+    z-index: 99;
     position: relative;
 }
 
+/* style for Home page */
 #start {
-    height:100vh;
-    position:relative;
+    height: 100vh;
+    position: relative;
     isolation: isolate;
 }
 
 
 /* Part Code from Kevin Powell YouTube video on how to set opacity */
 #start ::after {
-    content:"";
+    content: "";
     position: absolute;
-    inset:0;
-    z-index:-1;
+    inset: 0;
+    z-index: -1;
     opacity: .2;
-    filter:brightness(0.4);
-    
+    filter: brightness(0.4);
+
     background: url(/static/css/img/main_hero.jpg) no-repeat center center fixed;
     background-size: cover;
 }
 
-#hr_hero{
-    
+#hr_hero {
+
     border: 3px solid rgb(0, 0, 0);
-    border-radius:3px;
-}
-
-#faq{
-    background-color: #e8e8e8;
-background-image: linear-gradient(225deg, #e8e8e8 0%, #966c6e 33%, #605e5e 66%, #000000 100%);
- 
-}
-
-#line{
-    color:black;
-    margin:15px;
+    border-radius: 3px;
 }
 
 
-#journal_hero{
-    height:80vh;
-    position:relative;
+#line {
+    color: black;
+    margin: 15px;
+}
+
+#faq {
+    position: relative;
+    background: url(/static/css/img/faq.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+
+/* style for Journal page */
+#journal_hero {
+    height: 80vh;
+    position: relative;
     isolation: isolate;
 }
 
 #journal_hero ::after {
-    content:"";
+    content: "";
     position: absolute;
-    inset:0;
-    z-index:-1;
+    inset: 0;
+    z-index: -1;
     opacity: .2;
-    filter:brightness(0.4);
-    
+    filter: brightness(0.4);
+
     background: url(/static/css/img/journal_hero.jpg) no-repeat center center fixed;
     background-size: cover;
 }
 
-#journal_detail{
-    position:relative;
+#card_hr {
+    border: 1px dashed black;
+}
+
+/* Jounral detail page style */
+#journal_detail {
+    position: relative;
     isolation: isolate;
 }
 
 #journal_detail ::after {
-    content:"";
+    content: "";
     position: absolute;
-    inset:0;
-    z-index:-1;
+    inset: 0;
+    z-index: -1;
     opacity: .2;
-    filter:brightness(0.4);
-    
+    filter: brightness(0.4);
+
     background: url(/static/css/img/post_detail_hero.jpg) no-repeat center center fixed;
     background-size: cover;
 }
 
-#card_hr {
-    border:1px dashed black;
-}
-
+/* Login page style */
 #login {
-    height:100vh;
-    position:relative;
+    height: 100vh;
+    position: relative;
     isolation: isolate;
 }
 
 #login ::after {
-    content:"";
+    content: "";
     position: absolute;
-    inset:0;
-    z-index:-1;
+    inset: 0;
+    z-index: -1;
     opacity: .2;
-    filter:brightness(0.4);
-    
+    filter: brightness(0.4);
+
     background: url(/static/css/img/login_hero.jpg) no-repeat center center fixed;
     background-size: cover;
 }
 
+/* Logout page style */
 #logout {
-    height:100vh;
-    position:relative;
+    height: 100vh;
+    position: relative;
     isolation: isolate;
 }
 
 #logout ::after {
-    content:"";
+    content: "";
     position: absolute;
-    inset:0;
-    z-index:-1;
+    inset: 0;
+    z-index: -1;
     opacity: .2;
-    filter:brightness(0.4);
-    
+    filter: brightness(0.4);
+
     background: url(/static/css/img/logout_hero.jpg) no-repeat center center fixed;
     background-size: cover;
 }
 
+/* Register page style */
 #sign_up {
-    height:100vh;
-    position:relative;
+    height: 100vh;
+    position: relative;
     isolation: isolate;
 }
 
 #sign_up ::after {
-    content:"";
+    content: "";
     position: absolute;
-    inset:0;
-    z-index:-1;
+    inset: 0;
+    z-index: -1;
     opacity: .2;
-    filter:brightness(0.4);
-    
+    filter: brightness(0.4);
+
     background: url(/static/css/img/sign_up_hero.jpg) no-repeat center center fixed;
     background-size: cover;
 }
 
 
-@media (max-width: 752px){
-.line {
-    border-bottom: solid 2px;
-}
+/* Media Query for max width of 752px */
+@media (max-width: 752px) {
+    .line {
+        border-bottom: solid 2px;
+    }
 }
 
-
-@media (max-height: 780px){
+/* Media Query for max height of 780px */
+@media (max-height: 780px) {
     #start {
-        height:auto;
+        height: auto;
     }
 
-    #journal_hero{
-        height:auto;
+    #journal_hero {
+        height: auto;
     }
 
     #login {
-        height:80vh;
+        height: 80vh;
     }
 
     #logout {
-        height:80vh;
+        height: 80vh;
     }
 
     #sign_up {
-        height:auto;
+        height: auto;
     }
+}
 
-   
+/* Media Query for max height of 420px */
+@media (max-height: 420px) {
+    #login {
+        height: auto;
     }
-
-    @media (max-height: 420px){
-        #login {
-            height:auto;
-        }
-    }
-    
-
-
+}

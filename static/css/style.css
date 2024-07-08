@@ -80,7 +80,7 @@ a {
     background-size: cover;
 }
 
-#card_hr {
+.card_hr {
     border: 1px dashed black;
 }
 

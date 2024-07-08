@@ -22,7 +22,7 @@
                     <div class="card-body">
                         <h5 class="card-header text-primary "><strong>{{post.title}}</strong></h5>
                         <p class="card-text text-muted my-3"><em>{{post.excerpt}}</em></p>
-                        <hr id="card_hr">
+                        <hr class="card_hr">
                         <p class="text-success text-uppercase"> watchlist: {{ post.watchlist }} </p>
                         <div class="card-footer">
                             <a href="{% url 'post_detail' post.slug %}"

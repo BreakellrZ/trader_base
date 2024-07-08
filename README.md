@@ -77,6 +77,8 @@ After decided on the strategy, the scope plane was carefully created.
 # **5. Validation, Testing & Bugs**
 
 ## **5.1. Validation**
+- Pep 8 CI Validator tests: 
+
 | Directory      | File            | Result                                                   |
 | -------------- | --------------- | -------------------------------------------------------- |
 | pp4_project    | \`settings.py\` | <span style="color:red;">Fail (Line to long line 122)</span>|
@@ -99,6 +101,9 @@ After decided on the strategy, the scope plane was carefully created.
 | home           | \`apps.py\`     | <span style="color:green;">PASS</span>                   |
 | home           | \`admin.py\`    | <span style="color:green;">PASS</span>                   |
 | home           | \`init.py\`     | <span style="color:green;">PASS</span>                   |
+
+- W3C CSS VALIDAOR : 
+No errors found.
 
 
 ## **5.2. Testing**
@@ -136,13 +141,6 @@ After decided on the strategy, the scope plane was carefully created.
 ## **7. Technologies & Credits**
 
 ### 7.1. Technologies used to develop and deploy this project
-
-
-
-### 7.3. Requirements.txt
-
-
-
 
 ### 7.3. Credits
 
