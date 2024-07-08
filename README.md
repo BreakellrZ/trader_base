@@ -77,7 +77,28 @@ After decided on the strategy, the scope plane was carefully created.
 # **5. Validation, Testing & Bugs**
 
 ## **5.1. Validation**
-
+| Directory      | File            | Result                                                   |
+| -------------- | --------------- | -------------------------------------------------------- |
+| pp4_project    | \`settings.py\` | <span style="color:red;">Fail (Line to long line 122)</span>|
+| pp4_project    | \`urls.py\`     | <span style="color:green;">PASS</span>                   |
+| pp4_project    | \`init.py\`     | <span style="color:green;">PASS</span>                   |
+| pp4_project    | \`asgi.py\`     | <span style="color:green;">PASS</span>                   |
+| pp4_project    | \`wsgi.py\`     | <span style="color:green;">PASS</span>                   |
+| trading_blog   | \`urls.py\`     | <span style="color:green;">PASS</span>                   |
+| trading_blog   | \`views.py\`    | <span style="color:green;">PASS</span>                   |
+| trading_blog   | \`tests.py\`    | <span style="color:green;">PASS</span>                   |
+| trading_blog   | \`models.py\`   | <span style="color:green;">PASS</span>                   |
+| trading_blog   | \`forms.py\`    | <span style="color:green;">PASS</span>                   |
+| trading_blog   | \`apps.py\`     | <span style="color:green;">PASS</span>                   |
+| trading_blog   | \`admin.py\`    | <span style="color:green;">PASS</span>                   |
+| trading_blog   | \`init.py\`     | <span style="color:green;">PASS</span>                   |
+| home           | \`views.py\`    | <span style="color:green;">PASS</span>                   |
+| home           | \`urls.py\`     | <span style="color:green;">PASS</span>                   |
+| home           | \`tests.py\`    | <span style="color:green;">PASS</span>                   |
+| home           | \`models.py\`   | <span style="color:green;">PASS</span>                   |
+| home           | \`apps.py\`     | <span style="color:green;">PASS</span>                   |
+| home           | \`admin.py\`    | <span style="color:green;">PASS</span>                   |
+| home           | \`init.py\`     | <span style="color:green;">PASS</span>                   |
 
 
 ## **5.2. Testing**
