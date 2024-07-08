@@ -1,7 +1,7 @@
+/* Main styles */
 section {
     padding: 60px;
 }
-
 
 h1 {
     font-weight: bold;
@@ -16,12 +16,13 @@ a {
     position: relative;
 }
 
-
+/* Button style */
 .btn {
     z-index: 99;
     position: relative;
 }
 
+/* style for Home page */
 #start {
     height: 100vh;
     position: relative;
@@ -54,7 +55,13 @@ a {
     margin: 15px;
 }
 
+#faq {
+    position: relative;
+    background: url(/static/css/img/faq.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
 
+/* style for Journal page */
 #journal_hero {
     height: 80vh;
     position: relative;
@@ -73,6 +80,11 @@ a {
     background-size: cover;
 }
 
+#card_hr {
+    border: 1px dashed black;
+}
+
+/* Jounral detail page style */
 #journal_detail {
     position: relative;
     isolation: isolate;
@@ -90,10 +102,7 @@ a {
     background-size: cover;
 }
 
-#card_hr {
-    border: 1px dashed black;
-}
-
+/* Login page style */
 #login {
     height: 100vh;
     position: relative;
@@ -112,6 +121,7 @@ a {
     background-size: cover;
 }
 
+/* Logout page style */
 #logout {
     height: 100vh;
     position: relative;
@@ -130,13 +140,7 @@ a {
     background-size: cover;
 }
 
-#faq {
-    position: relative;
-    background: url(/static/css/img/faq.jpg) no-repeat center center fixed;
-    background-size: cover;
-}
-
-
+/* Register page style */
 #sign_up {
     height: 100vh;
     position: relative;
@@ -156,13 +160,14 @@ a {
 }
 
 
+/* Media Query for max width of 752px */
 @media (max-width: 752px) {
     .line {
         border-bottom: solid 2px;
     }
 }
 
-
+/* Media Query for max height of 780px */
 @media (max-height: 780px) {
     #start {
         height: auto;
@@ -183,10 +188,9 @@ a {
     #sign_up {
         height: auto;
     }
-
-
 }
 
+/* Media Query for max height of 420px */
 @media (max-height: 420px) {
     #login {
         height: auto;

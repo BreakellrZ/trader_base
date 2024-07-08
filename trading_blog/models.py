@@ -6,17 +6,17 @@ from cloudinary.models import CloudinaryField
 # Status if post is published or in the draft.
 STATUS = ((0, "Draft"), (1, "Published"))
 
-# Currency Watchlist 
+# Currency Watchlist
 WATCHLIST = (
-    ('eur/usd','EUR/USD'),
-    ('gbp/usd','GBP/USD'),
-    ('usd/cad','USD/CAD'),
-    ('eur/gbp','EUR/GBP'),
-    ('treasuries','TREASURIES'),
+    ('eur/usd', 'EUR/USD'),
+    ('gbp/usd', 'GBP/USD'),
+    ('usd/cad', 'USD/CAD'),
+    ('eur/gbp', 'EUR/GBP'),
+    ('treasuries', 'TREASURIES'),
     ('bond yields', 'BOND YIELDS'),
-    ('s&p500','S&P500'),
+    ('s&p500', 'S&P500'),
     ('nasdaq100', 'NASDAQ100'),
-    ('dxy','DXY'),
+    ('dxy', 'DXY'),
 )
 
 # Type of news events
@@ -40,7 +40,8 @@ class Journal(models.Model):
     date = models.DateField(auto_now=True)
     status = models.IntegerField(choices=STATUS, default=0)
     excerpt = models.TextField(blank=True)
-    watchlist = models.CharField(max_length=50, choices=WATCHLIST, default="dxy")
+    watchlist = models.CharField(
+        max_length=50, choices=WATCHLIST, default="dxy")
     news_events = models.CharField(choices=NEWS_EVENTS, default="None")
     news = models.CharField(max_length=50, blank=True)
     chart_image = CloudinaryField('image', default='placeholder')
@@ -48,9 +49,10 @@ class Journal(models.Model):
     class Meta:
         ordering = ["-date"]
 
-
     def __str__(self):
-        return f"This is a  {self.title} post which includes - {self.watchlist} & {self.news_events}"
+        return (f"This is a  {self.title} post which includes -\n"
+                f"{self.watchlist} & {self.news_events}"
+                )
 
 
 # Comment Model
@@ -66,6 +68,6 @@ class Comment(models.Model):
     class Meta:
         ordering = ["-created_on"]
 
-
     def __str__(self):
-        return f"This comment is from the {self.post} post - - The Author is {self.author}"
+        return (f"This comment is from the {self.post} \n"
+                f"post - - The Author is {self.author}")

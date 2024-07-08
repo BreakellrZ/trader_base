@@ -13,6 +13,9 @@ class Migration(migrations.Migration):
         migrations.AlterField(
             model_name='journal',
             name='news_events',
-            field=models.CharField(choices=[('None', 'None'), ('High Impact News', 'H'), ('Medium Impact News', 'M'), ('Low Impact News', 'L')], default='None'),
+            field=models.CharField(choices=[('None', 'None'),
+            ('High Impact News', 'H'),
+            ('Medium Impact News', 'M'),
+            ('Low Impact News', 'L')], default='None'),
         ),
     ]

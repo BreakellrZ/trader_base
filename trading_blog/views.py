@@ -1,3 +1,6 @@
+"""
+Essential Imports
+"""
 from django.shortcuts import render, get_object_or_404, reverse
 from django.views import generic
 from django.contrib import messages
@@ -8,6 +11,11 @@ from .forms import CommentForm
 
 # Create your views here.
 class PostList(generic.ListView):
+    """
+    Display Journal Posts
+    Template = post.html
+    Paginate the post by 3
+    """
     queryset = Journal.objects.all().order_by("-date")
     template_name = "post.html"
     paginate_by = 3
@@ -77,12 +85,13 @@ def comment_edit(request, slug, comment_id):
             comment.save()
             messages.add_message(request, messages.SUCCESS, 'Comment Updated!')
         else:
-            messages.add_message(request, messages.ERROR, 'Error updating comment!')
+            messages.add_message(
+                request, messages.ERROR, 'Error updating comment!')
 
     return HttpResponseRedirect(reverse('post_detail', args=[slug]))
 
 
-# View for deleting comments 
+# View for deleting comments
 def comment_delete(request, slug, comment_id):
     """
     view to delete comment
@@ -95,6 +104,7 @@ def comment_delete(request, slug, comment_id):
         comment.delete()
         messages.add_message(request, messages.SUCCESS, 'Comment deleted!')
     else:
-        messages.add_message(request, messages.ERROR, 'You can only delete your own comments!')
+        messages.add_message(
+            request, messages.ERROR, 'You can only delete your own comments!')
 
     return HttpResponseRedirect(reverse('post_detail', args=[slug]))
