@@ -1,9 +1,9 @@
-# ***TraderBase - Colin Breakell - Portfolio Project 4 ***
+# *** TraderBase - Colin Breakell - Portfolio Project 4 ***
 
 - TraderBase is a website for Forex traders who would like to follow along with a Funded ICT Trader. I decided to make this website for all ICT traders out there who would like to gain information and knowledge, while following my journey via a Journal blog. In my Journal I will be providing daily and weekly analysis. Each blog post will contain chart examples and text explaining what my thought proccess is for each day and each week. I will be showing trade examples, useful information, and trading models for users who signup. I wanted to give a 'Money Heist' vibe to my website beacuse I believe trading is like a money heist. We are entering the market ready to start a heist and take money out of the market for ourselves.
 
 
-
+![Am I responsive image](documentation/am_i_responsive_pp4.png)
 
 # **2. Table of content**
 
@@ -105,6 +105,12 @@ After decided on the strategy, the scope plane was carefully created.
 - W3C CSS VALIDAOR : 
 No errors found.
 
+- W3C HTML Validator :
+
+- JS Validation 
+
+- Lighthouse scores
+
 
 ## **5.2. Testing**
 |Epic|What the test is|How I done the test|Outcome|
@@ -141,16 +147,18 @@ Others were more complex.
 - One bug involved buttons on top of my hero images. At one stage during development buttons and anchors stopped working and were not clickable for me in sections where I included styles to a hero image. I realised this was a z-index issue. For my hero images to blend in to the background I had to use a z-index of -1 as part of my styling. This caused an issue with the buttons and anchor tags in that section. I had to style buttons and anchor tags on their own and change their z-index for them to function correctly again. 
 <details>
 <summary> Z-index button & anchor tags bug </summary>
-![z-index bug](documentation/z-index_bug.png)
+
+![Z-index bug](documentation/z-index_bug.png)
 </details>
 
+
 - Server 500 error when Deployed to Heroku. I kept getting a server 500 error when I deployed to Heroku and treid to open my post_detail.html Journal entries. After some help I realised that I did not add my cloudinary URL to config vars in Heroku settings and the images I was uploading was not being registered by Heroku.
-<summary> Server 500 bug </summary>
+<details>
+<summary> Server 500 bug</summary>
+
 ![Server 500 error](documentation/value_error_bug.png)
 </details>
 
-
-[Back to top]()
 
 ---
 
@@ -188,6 +196,20 @@ When I click on 'View' this opened the application.
 3. Edit the repository name and description if desired
 4. Click the green create fork button
  
+ ### Making a Local Clone
+
+1. Log in to GitHub and locate the [GitHub Repository](https://github.com/)
+2. Under the repository name, click "Clone or download".
+3. To clone the repository using HTTPS, under "Clone with HTTPS", copy the link.
+4. Open Git Bash
+5. Change the current working directory to the location where you want the cloned directory to be made.
+6. Type `git clone`, and then paste the URL you copied in Step 3.
+
+```
+$ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
+```
+
+7. Press Enter. Your local clone will be created.
 
 [Back to top]()
 
@@ -224,21 +246,21 @@ When I click on 'View' this opened the application.
 
 ### 7.2. Python Modules Imported 
 
-[Django-allauth](https://pypi.org/project/django-allauth/) 
+- [Django-allauth](https://pypi.org/project/django-allauth/) 
 
-[Dj-database-url](https://pypi.org/project/dj-database-url/) 
+- [Dj-database-url](https://pypi.org/project/dj-database-url/) 
 
-[Gunicorn](https://pypi.org/project/gunicorn/) 
+- [Gunicorn](https://pypi.org/project/gunicorn/) 
 
-[Psycopg2](https://pypi.org/project/psycopg2/) 
+- [Psycopg2](https://pypi.org/project/psycopg2/) 
 
-[Django Summernote](https://pypi.org/project/django-summernote/) 
+- [Django Summernote](https://pypi.org/project/django-summernote/) 
 
-[Django Crispy Forms](https://pypi.org/project/django-crispy-forms/) 
+- [Django Crispy Forms](https://pypi.org/project/django-crispy-forms/) 
 
-[Dj3-cloudinary-storage](https://pypi.org/project/dj3-cloudinary-storage/) 
+- [Dj3-cloudinary-storage](https://pypi.org/project/dj3-cloudinary-storage/) 
 
-[Cloudinary](https://pypi.org/project/cloudinary/1.27.0/) 
+- [Cloudinary](https://pypi.org/project/cloudinary/1.27.0/) 
 
 
 ### 7.3. Credits
