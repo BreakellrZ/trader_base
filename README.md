@@ -107,18 +107,34 @@ No errors found.
 
 
 ## **5.2. Testing**
-|Epic|what the test is|Acceptance Criteria|Outcome|
+|Epic|What the test is|How I done the test|Outcome|
 |-------------|------------------|-----------|-------|
 ||||| 
-|Getting started/Organization|Have I set up my github Repository properly?|A working GitHub Repository|Works as expected|
-|Getting started/Organization|Have I created my django project?|Installed Django, created pp4_project, installed needed apps|Works as expected|
-|Getting started/Organization|Have I deployed and set up Heroku ?|Set up Heroku correctly, Deploy to Heroku, Install a production-ready webserver for Heroku (gunicorn)|Works as expected|
-|Getting started/Organization|Testing if I registered to Cloudinary and is it working as an image hosting provider for superusers?|Superusers can upload images to blog posts, Images are stored on cloudinary|Works as expected|
-|User Authentication and Authorization|Can users Register?|Be able to create a new account. Be able to create a Username and Password.|Works as expected|
-|User Authentication and Authorization|Can users Login and does an error show if unsuccessful?|Be able to login with Username and Password. Give an error message if login is unsuccessful.|Works as expected|
-|User Authentication and Authorization|Can users logout?|User can log out when needed. Have a log out link for users to press to log out. When logged out show login link instead.|Works as expected|
-|User Authentication and Authorization|Can the Journal page only be seen when a user is logged in?|Journal page is not visible and available to click if not logged in. Journal page is visible and available to click if signed in|Works as expected|
-|User Authentication and Authorization|Can users see if they are logged in or not?|Show users if they are logged in or not. Tell users who is logged in. Tell users if they are not logged in|Works as expected|
+|Getting started/Organization|Tested to see if the deployed project works|Clicked on Heroku live project url.|Works as expected|
+|Getting started/Organization|Tested to see if PostgreSQL database was connected to Heroku|Logged in as superuser and Checked admin panel on Heroku live site to see if database was connected successfully|Works as expected|
+|Getting started/Organization|Testing if I registered to Cloudinary and is it working as an image hosting provider for superusers.|Uploaded a image to my Journal posts via the admin panel using cloudinary, checked if It was displayed on my post_detail page|Works as expected|
+|User Authentication and Authorization|Testing to see if users can register|Try create a new account, entered username and password correctly|Works as expected|
+|User Authentication and Authorization|Testing to see if an error pops up when users dont add a username and/or password when registering|Leave out a password and/or username when registering|Works as expected|
+|User Authentication and Authorization|Can users Login and does an error show if unsuccessful?|Logged in correctly - then logged in with wrong credentials to see if an error message shows|Works as expected|
+|User Authentication and Authorization|Can users logout?|Clicked logout button|Works as expected|
+|User Authentication and Authorization|Does the correct links show when Logged in/out|Clicked login button - to see if Journal page shows and logout shows - Then clicked logout to see if Journal page was invisible and login/register links were visible|Works as expected|
+|User Authentication and Authorization|Testing to see if users can see if they are logged in or not|Logged in and logged out to see if a message showed that the user is logged in or logged out|Works as expected|
+|Trading Blog|Tested to see if user can click each Journal post, and it brings them directly to that post|Clicked on each trading Journal post to see if each post sent me to the correct post_detail page|Works as expected|
+|Trading Blog|Tested to see if user can view all Journal posts posted via a paginiated list of posts|Clicked on next & previous buttons on post page to go between the most recent posts to older posts|Works as expected|
+|Admin Panel|Tested to see if Superuser can successfully use the admin panel to upload Jounral blog posts |Went to admin panel- clicked on Journals - clicked add Journal - Added content to all neccessary fields and clicked save|Works as expected|
+|Admin Panel|Tested to see if Journal blog posts were not uploaded to the journal page if status was set to 'draft' |Went to admin panel - clicked on add Journals - Added content to Journal - Put status as draft - hit save - checked to see if post was uploaded or not to journal page. Post was not uploaded |Works as expected|
+|Admin Panel|Tested to see if each part of my Journal model worked and was visible for users to see once published. These include Excerpt, title, and watchlist on post.html Journal page - Title, main content, watchlist, news events,specific news, and images on post_detail.html page|Works as expected|
+|Admin Panel|Tested to see if Superuser can successfully approve comments made by users |Went to admin panel- clicked on Comments - clicked on each comment - Clicked the approve box to approve the comment - clicked save -  checked comment section on live site to see if comment had been approved|Works as expected|
+|User Interaction on posts|Tested to see if users can comment on Journal posts|Clicked into a Journal post, scrolled down to comment section - Typed in a comment and clicked submit|Works as expected|
+|User Interaction on posts|Tested to see if users can update their comment on Journal posts|Clicked into a Journal post, scrolled down to comment section - Typed in a comment and clicked submit, then clicked edit button on comment - typed in new comment and clicked update button - comment updated |Works as expected|
+|User Interaction on posts|Tested to see if users can delete their comment on Journal posts and if a modal pops up when user clicks delete to confirm deletion|Clicked into a Journal post, scrolled down to comment section - Typed in a comment and clicked submit - Found comment and clicked delete - modal pops up, clicked delete button to confirm deletion |Works as expected|
+|User Interaction on posts|Tested to see if text shows when a user deletes a post |Clicked into a Journal post, scrolled down to comment section - Typed in a comment and clicked submit - deleted comment - Text then shows to the user that the comment was deleted|Works as expected|
+|User Interaction on posts|Tested to see if text shows when a user comments on a post |Clicked into a Journal post, scrolled down to comment section - Typed in a comment and clicked submit. Text shown that the comment was submitted and is awaiting approval |Works as expected|
+|User Interaction on posts|Tested to see if text shows when a user updates a comment on a post |Clicked into a Journal post, scrolled down to comment section - Typed in a comment and clicked submit. - Click edit button and update comment, then click update. - Text then shown saying comment updated! |Works as expected|
+
+
+
+
 
 
 
