@@ -144,7 +144,10 @@ Others were more complex.
 ![z-index bug](documentation/z-index_bug.png)
 </details>
 
--
+- Server 500 error when Deployed to Heroku. I kept getting a server 500 error when I deployed to Heroku and treid to open my post_detail.html Journal entries. After some help I realised that I did not add my cloudinary URL to config vars in Heroku settings and the images I was uploading was not being registered by Heroku.
+<summary> Server 500 bug </summary>
+![Server 500 error](documentation/value_error_bug.png)
+</details>
 
 
 [Back to top]()
@@ -153,13 +156,13 @@ Others were more complex.
 
 # **6. Deployment**
 
-*Deployment with Heroku*
+### Deployment with Heroku ###
 These are the steps I took to deploy my project to Heroku.
 
 - Log into Heroku or create an account.
-- Via main page click new in the top right corner and select "Create new app".
+- Via main page click 'new' in the top right corner and select "Create new app".
 - Enter a unique App name, choose your region and "Create app".
-- In settings click 'Reveal config vars'. (I added a DATABASE_URL and SECRET_KEY as my "Keys" - I put in my postgres database URL and a new secret key as my values.)
+- In settings click 'Reveal config vars'. (I added a DATABASE_URL, SECRET_KEY, and CLOUDINARY_URL as my "Keys" - I put in my postgres database URL that I got from Code Institute at [Database](https://dbs.ci-dbs.net/), a new secret key, as my values.)
 - Just under config vars I Clicked Add "buildback" and put in heroku/python.
 - I clicked "Resources" and made sure Eco Dynos was set to 'Eco'
 - Go to the 'Deploy' tab and under 'Deployment Method' click on 'GitHub'.
@@ -167,6 +170,23 @@ These are the steps I took to deploy my project to Heroku.
 - You can choose an automatic deploy or a manual deploy. I chose a manual deploy. With a manual deploy I made sure the main branch was selected and clicked 'deploy branch'.
 - Once the build is finished there should be a message saying 'Your app was successfully deployed' with a 'View' button.
 When I click on 'View' this opened the application.
+
+### Database setup ###
+- Went to [Database](https://dbs.ci-dbs.net/) a Code Institute Database host.
+- Submitted email address. 
+- Got Database URL via email. 
+- set it as environ variable in env.py file.
+- Updated database in settings.py file to DATABASES = {
+    'default': dj_database_url.parse(os.environ.get("DATABASE_URL"))
+}
+- Put DATABASE_URL key and database url as value in Heroku Config Vars.
+
+### Fork The Repository
+
+1. Go to the GitHub repository
+2. Click on Fork button in the upper right-hand corner
+3. Edit the repository name and description if desired
+4. Click the green create fork button
  
 
 [Back to top]()
@@ -176,6 +196,50 @@ When I click on 'View' this opened the application.
 ## **7. Technologies & Credits**
 
 ### 7.1. Technologies used to develop and deploy this project
+
+- [Bootstrap](https://getbootstrap.com/) was used to style and make website responsive.
+- [VS Code](https://code.visualstudio.com/) was used to code the website locally.
+- [Balsamiq - Wireframe](https://balsamiq.com/wireframes/) was used to create quick and precise wireframes.
+- [Favicon Generator](https://favicon.io/favicon-converter/) was used to generate Favicon.
+- [Font Awesome](https://fontawesome.com/) was used for all icons on the website.
+- [GitHub](https://github.com/) is the hosting site used to store the code for the website.
+- [Git](https://git-scm.com/) was used as a version control software to commit and push the code to the GitHub repository.
+- [Google Chrome Lighthouse](https://developers.google.com/web/tools/lighthouse) was used for testing the websites performance, accessibility, Best practices, and SEO during the testing phase.
+- [Google Chrome Developer Tools](https://developer.chrome.com/docs/devtools/overview/) was used during testing, debugging.
+- [W3C HTML Validator](https://validator.w3.org/) was used to check for errors in the HTML code.
+- [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) was used to check for errors in the CSS code
+- [Wave Accessibility Tool](https://wave.webaim.org/) was used during testing to check accessibility
+- [CI Python Pep8 Checker](https://pep8ci.herokuapp.com/) was used to validate the Python code.
+- [Cloudinary](https://cloudinary.com/) was used to store static files and images.
+- [Heroku](https://heroku.com/) was the hosting provider used.
+
+### Languages Used
+
+- HTML
+- CSS
+- JavaScript
+- Bootstrap
+- Python
+- Django
+
+### 7.2. Python Modules Imported 
+
+[Django-allauth](https://pypi.org/project/django-allauth/) 
+
+[Dj-database-url](https://pypi.org/project/dj-database-url/) 
+
+[Gunicorn](https://pypi.org/project/gunicorn/) 
+
+[Psycopg2](https://pypi.org/project/psycopg2/) 
+
+[Django Summernote](https://pypi.org/project/django-summernote/) 
+
+[Django Crispy Forms](https://pypi.org/project/django-crispy-forms/) 
+
+[Dj3-cloudinary-storage](https://pypi.org/project/dj3-cloudinary-storage/) 
+
+[Cloudinary](https://pypi.org/project/cloudinary/1.27.0/) 
+
 
 ### 7.3. Credits
 
