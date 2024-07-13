@@ -1,6 +1,6 @@
-# *** TraderBase - Colin Breakell - Portfolio Project 4 ***
+# ***TraderBase - Colin Breakell - Portfolio Project 4***
 
-- TraderBase is a website for Forex traders who would like to follow along with a Funded ICT Trader. I decided to make this website for all ICT traders out there who would like to gain information and knowledge, while following my journey via a Journal blog. In my Journal I will be providing daily and weekly analysis. Each blog post will contain chart examples and text explaining what my thought proccess is for each day and each week. I will be showing trade examples, useful information, and trading models for users who signup. I wanted to give a 'Money Heist' vibe to my website beacuse I believe trading is like a money heist. We are entering the market ready to start a heist and take money out of the market for ourselves.
+- TraderBase is a website for Forex traders who would like to follow along with a Funded ICT Trader. I decided to make this website for all ICT traders out there who would like to gain information and knowledge, while following my journey via a Journal blog. In my Journal I will be providing daily and weekly analysis. (ICT trading is a style of trading from a trader called ICT) Each blog post will contain chart examples and text explaining what my thought proccess is for each day and each week. I will be showing trade examples, useful information, and trading models for users who signup. I wanted to give a 'Money Heist' vibe to my website beacuse I believe trading is like a money heist. We are entering the market ready to start a heist and take money out of the market for ourselves.
 
 
 ![Am I responsive image](documentation/am_i_responsive_pp4.png)
@@ -12,22 +12,39 @@
 ## **3.1. The Strategy Plane**
 
 ### **3.1.1 The Idea**
-
+The idea for TraderBase is simple. I wanted a website that allowed like minded Traders to be able to view my analysis for free. A place for ICT traders to learn some trading education and to compare there analysis to mine. My idea was for me to post Journal entries - these Journal entries would involve weekly, and daily analsyis. People can sign up and view my Journal entires and hopefully learn something!
 
 ### **3.1.2 The Ideal User**
+My target audience is like minded traders.
 
+- Ideal user likes Forex Trading 
+- Ideal user like Indices trading
+- Ideal user likes ICT style of content and analysis
 
 
 ### **3.1.3 Site Goals**
-
+- Offer users the ability to learn from my analysis 
+- Allow users to view my Journal entries in a clear and easy to read way
+- Allow users to ask questions via a comment section
 
 
 ### **3.1.4 Epics**
+After thinking about my project, 8 Epics were created for this project. These Epics were the main sections of the TraderBase project. You can view the Epics via the KanBan board for this project. The Epics consisted of :
 
+- EPIC 1 : Getting started/Organization
+- EPIC 2 : User Authentication and Authorization
+- EPIC 3 : App Creation
+- EPIC 4 : Database Models
+- EPIC 5 : Trading Journal 
+- EPIC 6 : User Interaction on Posts 
+- EPIC 7 : Style and Design of UI
+- EPIC 8 : Documentation
+![Epics](documentation/epics.png)
 
 ### **3.1.5 User stories**
 
-
+I had a total of 31 User Stoires for this project. I categorized them via Must-Have -- Should-have -- Could have -- & Wont have.
+Must haves were Crucial for this project. Should-haves were I should have this but it is not the end of the world if I do not. Could haves were if I thought something could be in my project, It would be nice to have it but it does not need it. Wont haves were user stories that I wont have in my project due to time restraints or the skills to be able to do it as of now.
 
 **MoSCoW prioritization technique stands for**:
 
@@ -45,7 +62,36 @@
 
 After decided on the strategy, the scope plane was carefully created.
 
+### List of user stories sorted by Epic :
 
+<details>
+<summary>
+View User Stories for EPIC 1 : Getting started/Organization
+</summary>
+
+| Issue                                                               | Title                                  | User Story                                                                                                                 |
+| ------------------------------------------------------------------- | -------------------------------------- | -------------------------------------------------------------------------------------------------------------------------- |
+| [# 1](https://github.com/BreakellrZ/trader_base/issues/12) | USER STORY : Setting up my Github Repoistory   | As a Developer I can setup a github Repository so that I can push all my work to it from my IDE and have the use of a KanBan Board.      |
+| [# 2](https://github.com/BreakellrZ/trader_base/issues/13) | User Story - Creating my Django project | As a Developer I can create a Django project in my IDE so that I can start my pp4 project.  |
+| [# 3](https://github.com/BreakellrZ/trader_base/issues/17) | User Story - Deploy and set up to Heroku |  As a Developer I can setup heroku so that I can deploy my project on Heroku |
+| [# 4](https://github.com/BreakellrZ/trader_base/issues/30) | User Story - Deploy and set up to Heroku |  As a Developer I can setup heroku so that I can deploy my project on Heroku |
+
+</details>
+
+<details>
+<summary>
+View User Stories for EPIC 2 : Database models
+</summary>
+
+| Issue                                                                 | Title                                                    | User Story                                                                                                                                                  |
+| --------------------------------------------------------------------- | -------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [# 13](https://github.com/tomik-z-cech/PP4-Aneta-s-Glimmer/issues/13) | USER STORY : Define Database Schema and create sub apps. | As a Developer, I need to create database schema that fits the purpose of the project and also create all the modular apps that will be used in the project. |
+| [# 14](https://github.com/tomik-z-cech/PP4-Aneta-s-Glimmer/issues/14) | USER STORY : Create database relationships               | As a Developer, I need to define relationships between models and import the relationships into working apps models.                                         |
+| [# 15](https://github.com/tomik-z-cech/PP4-Aneta-s-Glimmer/issues/15) | USER STORY : Implement Data Validation in Models         | As a Developer, I need implement data validation rules within Glimmer database models.                                                                      |
+
+</details>
+
+---
 
 
 ## **3.3. The Structure Plane**
