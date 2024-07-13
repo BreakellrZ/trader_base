@@ -39,7 +39,9 @@ After thinking about my project, 8 Epics were created for this project. These Ep
 - EPIC 6 : User Interaction on Posts 
 - EPIC 7 : Style and Design of UI
 - EPIC 8 : Documentation
-![Epics](documentation/epics.png)
+
+
+ - ![Epics](documentation/epics.png)
 
 ### **3.1.5 User stories**
 
@@ -71,25 +73,111 @@ View User Stories for EPIC 1 : Getting started/Organization
 
 | Issue                                                               | Title                                  | User Story                                                                                                                 |
 | ------------------------------------------------------------------- | -------------------------------------- | -------------------------------------------------------------------------------------------------------------------------- |
-| [# 1](https://github.com/BreakellrZ/trader_base/issues/12) | USER STORY : Setting up my Github Repoistory   | As a Developer I can setup a github Repository so that I can push all my work to it from my IDE and have the use of a KanBan Board.      |
+| [# 1](https://github.com/BreakellrZ/trader_base/issues/12) | User Story - Setting up my Github Repoistory   | As a Developer I can setup a github Repository so that I can push all my work to it from my IDE and have the use of a KanBan Board.      |
 | [# 2](https://github.com/BreakellrZ/trader_base/issues/13) | User Story - Creating my Django project | As a Developer I can create a Django project in my IDE so that I can start my pp4 project.  |
 | [# 3](https://github.com/BreakellrZ/trader_base/issues/17) | User Story - Deploy and set up to Heroku |  As a Developer I can setup heroku so that I can deploy my project on Heroku |
 | [# 4](https://github.com/BreakellrZ/trader_base/issues/30) | User Story - Deploy and set up to Heroku |  As a Developer I can setup heroku so that I can deploy my project on Heroku |
 
 </details>
 
+
 <details>
 <summary>
-View User Stories for EPIC 2 : Database models
+View User Stories for EPIC 2 : User Authorization and Authentication
 </summary>
 
-| Issue                                                                 | Title                                                    | User Story                                                                                                                                                  |
-| --------------------------------------------------------------------- | -------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [# 13](https://github.com/tomik-z-cech/PP4-Aneta-s-Glimmer/issues/13) | USER STORY : Define Database Schema and create sub apps. | As a Developer, I need to create database schema that fits the purpose of the project and also create all the modular apps that will be used in the project. |
-| [# 14](https://github.com/tomik-z-cech/PP4-Aneta-s-Glimmer/issues/14) | USER STORY : Create database relationships               | As a Developer, I need to define relationships between models and import the relationships into working apps models.                                         |
-| [# 15](https://github.com/tomik-z-cech/PP4-Aneta-s-Glimmer/issues/15) | USER STORY : Implement Data Validation in Models         | As a Developer, I need implement data validation rules within Glimmer database models.                                                                      |
+| Issue                                                               | Title                                  | User Story                                                                                                                 |
+| ------------------------------------------------------------------- | -------------------------------------- | -------------------------------------------------------------------------------------------------------------------------- |
+| [# 5](https://github.com/BreakellrZ/trader_base/issues/9) | User Story - Register    | As a Site User I am able to register to create a new account and to be able to select a username and passsword.      |
+| [# 6](https://github.com/BreakellrZ/trader_base/issues/10) | User Story - Login | As a Site User I am able to Log in to see registerd user sections. |
+| [# 7](https://github.com/BreakellrZ/trader_base/issues/11) | User Story - Logout | As a Site User, I can Log out so that I am no longer Logged in. |
+| [# 8](https://github.com/BreakellrZ/trader_base/issues/21) | User Story - Create Superuser |  As a developer, I can create a superuser so that I can control and view my database. |
+| [# 9](https://github.com/BreakellrZ/trader_base/issues/35) | User Story - Journal page can only be seen if user is logged in |  As a developer I can  make it so users only see the Journal page if they sign up  so that it gets people to sign up and gets them to comment on journal posts |
+| [# 10](https://github.com/BreakellrZ/trader_base/issues/34) | User Story : User can see if they are logged in or not |  As a user I can see if I am logged in so that I know if I need to log in or not |
 
 </details>
+
+<details>
+<summary>
+View User Stories for EPIC 3 : App Creation
+</summary>
+
+| Issue                                                               | Title                                  | User Story                                                                                                                 |
+| ------------------------------------------------------------------- | -------------------------------------- | -------------------------------------------------------------------------------------------------------------------------- |
+| [# 11](https://github.com/BreakellrZ/trader_base/issues/14) | User Story - Create Home app | As a Developer I can Create my first django app so that I can use this app for my home page     |
+| [# 12](https://github.com/BreakellrZ/trader_base/issues/16) | User Story - Create Trading Blog app | As a Developer I can create a rescource app so that I can use the app for an extra page on my website to display my trading blog/Journal data from my journal database. |
+
+</details>
+
+
+<details>
+<summary>
+View User Stories for EPIC 4 : DataBase Models
+</summary>
+
+| Issue                                                               | Title                                  | User Story                                                                                                                 |
+| ------------------------------------------------------------------- | -------------------------------------- | -------------------------------------------------------------------------------------------------------------------------- |
+| [# 13](https://github.com/BreakellrZ/trader_base/issues/19) | User Story : Create database with PostgreSQL | As a Developer I can create a postgre datbase so that I can store my data here.     |
+| [# 14](https://github.com/BreakellrZ/trader_base/issues/20) |User Story : Connect PostgreSQL database to code | As a Developer, I can connect my database to my code so that I can store my data to my database. |
+| [# 15](https://github.com/BreakellrZ/trader_base/issues/23) | User Story : Create a Journal Model| As a developer I can create a Journal model so that I can log my Journal data into my database |
+| [# 16](https://github.com/BreakellrZ/trader_base/issues/24) | User Story : Create a Comment Model| As a Developer I can create a comment datbase model so that Users can comment on Journal blog posts |
+
+</details>
+
+<details>
+<summary>
+View User Stories for EPIC 5 : Trading Journal 
+</summary>
+
+| Issue                                                               | Title                                  | User Story                                                                                                                 |
+| ------------------------------------------------------------------- | -------------------------------------- | -------------------------------------------------------------------------------------------------------------------------- |
+| [# 17](https://github.com/BreakellrZ/trader_base/issues/32) | User Story : View Post Journal Content | As a user I can view the Journal content so that I can enjoy and read up on the Journal entry. |
+| [# 18](https://github.com/BreakellrZ/trader_base/issues/25) | User Story : Create Views for trading_blog app| As a developer I can code my views.py file so that I can import my models to my views and then see my database via a generic listview on live website. |
+| [# 19](https://github.com/BreakellrZ/trader_base/issues/18) | User Story : View paginated list of posts| As a site user, I can view a paginated list of posts so that I can select which post I want to view. |
+| [# 20](https://github.com/BreakellrZ/trader_base/issues/29) | User Story : Open a Journal post| As a user I can click on a Journal post so that it opens the post and shows me the posts content |
+
+</details>
+
+<details>
+<summary>
+View User Stories for EPIC 6 : User Interaction on Posts 
+</summary>
+
+| Issue                                                               | Title                                  | User Story                                                                                                                 |
+| ------------------------------------------------------------------- | -------------------------------------- | -------------------------------------------------------------------------------------------------------------------------- |
+| [# 21](https://github.com/BreakellrZ/trader_base/issues/33) | User Story : User can Create Comments  | As a user I can have crud capabilities so that the user can create, update and delete their comments |
+| [# 22](https://github.com/BreakellrZ/trader_base/issues/38) | User Story : User can Update Comments | As a user I can have crud capabilities so that the user can create their comments |
+| [# 23](https://github.com/BreakellrZ/trader_base/issues/39) | User Story : User can Delete Comments | As a user I can have crud capabilities so that the user can delete their comments |
+
+</details>
+
+<details>
+<summary>
+View User Stories for EPIC 7 : Style and Design of UI 
+</summary>
+
+| Issue                                                               | Title                                  | User Story                                                                                                                 |
+| ------------------------------------------------------------------- | -------------------------------------- | -------------------------------------------------------------------------------------------------------------------------- |
+| [# 24](https://github.com/BreakellrZ/trader_base/issues/27) | User Story : Design Home page with Bootstrap | As a developer I can design the home page nicely so that the users can enjoy a nice UI and understand what the website is all about |
+| [# 25](https://github.com/BreakellrZ/trader_base/issues/28) | User Story : Design Journal page with Bootstrap|As a developer I can style the Journal page so that the users will have a nice Journal page to look at |
+| [# 26](https://github.com/BreakellrZ/trader_base/issues/37) | User Story : Custom Styling using CSS | As a developer I can use css so that I can use custom styles for my project |
+| [# 27](https://github.com/BreakellrZ/trader_base/issues/26) | User Story : Admin Panel Power Up | As a developer I can download summernote so that superusers have a better layout and format on the admin page. |
+
+</details>
+
+<details>
+<summary>
+View User Stories for EPIC 8 : Documentation
+</summary>
+
+| Issue                                                               | Title                                  | User Story                                                                                                                 |
+| ------------------------------------------------------------------- | -------------------------------------- | -------------------------------------------------------------------------------------------------------------------------- |
+| [# 28](https://github.com/BreakellrZ/trader_base/issues/40) | User Story : Document everything I can | As a developer I can document everything so that users can see what TraderBase is about & get a deeper insight into the making of TraderBase |
+
+</details>
+
+
+
 
 ---
 
