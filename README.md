@@ -58,12 +58,6 @@ Must haves were Crucial for this project. Should-haves were I should have this b
 
 **Won't-Have**: Features that are explicitly excluded from the project scope.
 
-
-
-## **3.2. The Scope Plane**
-
-After decided on the strategy, the scope plane was carefully created.
-
 ### List of user stories sorted by Epic :
 
 <details>
@@ -176,18 +170,46 @@ View User Stories for EPIC 8 : Documentation
 
 </details>
 
-
-
-
 ---
+
+
+## **3.2. The Scope Plane**
+
+The scope plans contained the following features to be added.
+
+### 3.2.1. Features to be implemented
+
+- **User Authentication** : Users can Register, Login and Logout.
+
+- **User Interaction for comments** : Users can interact with Journal entries via Comments.
+
+- **User Interaction via likes/dislikes** : Users can like or dislike each Journal entry post.
+
+- **FAQ** : Users can view the FAQ accordian for answers to the most asked questions about TraderBase.
+
+- **Notifications** : Users will be notified if they have commented on a post, deleted a post, updated a post & they will be able to see if they are logged in or not.
 
 
 ## **3.3. The Structure Plane**
 
+**The structure of TraderBase is consistent, predictable, learnable, and visible, all in the best way using Bootstrap for styling and layout.**
+It involves a clean header at the top of the page with the TraderBase logo to the left and the navbar links to the right. The footer is at the bottom of the page, it is clean, provoding users with a Telegram link for more trades from me, and also a disclamier to users that all content shown is not financial advice.
+
+Then on the Home page we have a lovely hero image with text filling up the full screen. As the user scrools down there is another two sections, one with cards showcasing what the users can expect from TraderBase, and the last section is a FAQ area.
+
+On the Journal page, we have the same Header and footer. The main section then involves a hero image and my Journal entry blog posts via cards. These cards are evenly spaced out and there is a Next and Previous buttons to press to go through the Journal entires. These buttons are structured just below the cards.
+
+Inside the journal entries we have the title shown, then under we have the watchlists and news events for this Journal entry, below that we have the main post content and then a comment section for users to interact with the posts. Comments are shown on the left while the comment form is structured on the right. Header and Footer are the same on all pages.
+
+The headers structure changes based on if the user is logged in or not. If logged in it will show 'JOURNAL' & 'LOGOUT'. If not logged in it will show 'LOGIN' & 'REGISTER'.
+
+### **DataBse Schemas** ###
+NEED TO DO LUCIDCHART
 
 
 ## **3.4. The Skeleton Plane**
 
+### 3.4.1. Wire-frames
 
 
 ## **3.5. The Surface Plane**
