@@ -204,7 +204,7 @@ Inside the journal entries we have the title shown, then under we have the watch
 
 The headers structure changes based on if the user is logged in or not. If logged in it will show 'JOURNAL' & 'LOGOUT'. If not logged in it will show 'LOGIN' & 'REGISTER'.
 
-### **DataBse Schemas** ###
+### **Database Schemas** ###
 NEED TO DO LUCIDCHART
 
 
@@ -214,37 +214,69 @@ NEED TO DO LUCIDCHART
 
 I used Balsamiq for my wireframes. This is what I came up for TradeBase : 
 
-- *Home page* 
-Main section of Home page : 
+#### *Home page* ####
+<details>
+<summary>
+Main section of Home page 
+</summary>
+
 ![Home page wireframe](/documentation//home_balsamiq_pp4.png) ![Mobile Home wireframe](/documentation/mobile_home_balsamiq_pp4.png)
 
-What to expect & FAQ Sections : 
+</details>
+
+<details>
+<summary>
+What to expect & FAQ Sections
+</summary>
+
 ![Home page part 2](/documentation/home_2_balsamiq_pp4.png) ![Home page part 2 mobile](/documentation/home_2_phone_balsamiq_pp4.png) ![Mobile home part 3](/documentation/mobile_home_3_balsamiq_pp4.png)
 
-- *Journal page* 
+</details>
+
+<details>
+<summary>
+Journal page
+</summary>
+
 ![Journal page wireframes](/documentation/journal_balsamiq_pp4.png) ![Mobile Journal page wireframes](/documentation/journal_mobile_balsamiq_pp4.png)
 
-- *Inside Journal post*
+</details>
+
+<details>
+<summary>
+Inside Journal Page
+</summary>
+
 ![Journal detail page wireframes](/documentation/journal_post_balsamiq_pp4.png) ![Journal detail post wireframes mobile](/documentation/journal_post_mobile_balsamiq_pp4.png)
 
-Comments section :
+</details>
+
+<details>
+<summary>
+Comment Section
+</summary>
+
 ![Comment section wireframes](/documentation/journal_comments_balsamiq_pp4.png) ![Comment section wireframes Mobile](/documentation/journal_comments_mobile_balsamiq_pp4.png)
 
+</details>
 
 
 ## **3.5. The Surface Plane**
-I went for a 'Money heist' theme for the surface plane. I used a lot of Money Hiest pictures for the hero images on the home page and Journal page and also for the cards on the home page. (Sourced from [UnSplash](https://unsplash.com/). All free images to use).
+I went for a 'Money heist' theme for the surface plane. I used a lot of Money Hiest pictures for the hero images on the home page and Journal page and also for the cards on the home page. (Sourced from [Unsplash](https://unsplash.com/). All free images to use).
 The reason for this type of design was because I felt like it fits into the trading theme. People Trade to make money and to get rich. To break free from the 'RatRace'. Money heist brings this vibe. Money Hiest is a spanish TV show based on robbers robbing a bank, getting their money and leaving. Just like the trading Markets people take a risk, enter the market, get there money and leave. 
 
 - *The logo* :
- I used was from Font Awesome. It is a icon of a money note with an up arrow indicating money growth. I used a straight line between the icon and the text 'Traderbase'. ![Icon](/documentation/logo.png)
+ I used was from Font Awesome. It is a icon of a money note with an up arrow indicating money growth. I used a straight line between the icon and the text 'Traderbase'. 
+ 
+ ![Icon](/documentation/logo.png)
 
 - *Color Pallette* :
  The main colors I used were blue, white, black, green, and red. These colors were all used using bootstraps color classes.
 Text was either black or white. Giving it a clean aesthetic. I used Blue for the main words, like the name of the website 'TraderBase', the names of the Journal entires on the cards, and the title of the Journal entry. Green was used sparingly, mainly to show users some sort of notification such as if they are logged in or not, or if they have deleted a comment or edited a comment they would get it shown in green text. I used green here so it would stand out to the user. Red was only used for delete buttons, to show users that their comments will be waiting for approval, and to let users know this website is not financial advice as these are all very important for the users to see. (Shown left hand side of the footer)
 
 - *Images* :
- Images were a big part of this project. As said previously I tried to stick with a money heist theme for all my images. I wanted to give a Rebellious vibe to this project. [UnSplash](https://unsplash.com/)
+ Images were a big part of this project. As said previously I tried to stick with a money heist theme for all my images. I wanted to give a Rebellious vibe to this project. [Unsplash](https://unsplash.com/)
+
 [Back to top]()
 
 ---
@@ -256,7 +288,7 @@ Text was either black or white. Giving it a clean aesthetic. I used Blue for the
 ## **4.1. Future Features**
 I have a lot of Ideas for future features for TraderBase. My main two ideas include :
 
-- An api that links a calender of all the high impact news events for users to see. [ForexFactory](https://www.forexfactory.com/)
+- An api that links a calender of all the high impact news events for users to see such as - [ForexFactory](https://www.forexfactory.com/)
 
 -  A chat room for all users to chat and share Trade ideas with eachother.
 
@@ -362,7 +394,7 @@ These are the steps I took to deploy my project to Heroku.
 - Log into Heroku or create an account.
 - Via main page click 'new' in the top right corner and select "Create new app".
 - Enter a unique App name, choose your region and "Create app".
-- In settings click 'Reveal config vars'. (I added a DATABASE_URL, SECRET_KEY, and CLOUDINARY_URL as my "Keys" - I put in my postgres database URL that I got from Code Institute at [Database](https://dbs.ci-dbs.net/), a new secret key, as my values.)
+- In settings click 'Reveal config vars'. (I added a DATABASE_URL, SECRET_KEY, and CLOUDINARY_URL as my "Keys" - I put in my postgres database URL that I got from Code Institute at ( [Database](https://dbs.ci-dbs.net/) ), & a new secret key, as my values.)
 - Just under config vars I Clicked Add "buildback" and put in heroku/python.
 - I clicked "Resources" and made sure Eco Dynos was set to 'Eco'
 - Go to the 'Deploy' tab and under 'Deployment Method' click on 'GitHub'.
@@ -372,7 +404,7 @@ These are the steps I took to deploy my project to Heroku.
 When I click on 'View' this opened the application.
 
 ### Database setup ###
-- Went to [Database](https://dbs.ci-dbs.net/) a Code Institute Database host.
+- Went to [Code Institutes Database provider](https://dbs.ci-dbs.net/).
 - Submitted email address. 
 - Got Database URL via email. 
 - set it as environ variable in env.py file.
@@ -390,7 +422,7 @@ When I click on 'View' this opened the application.
  
  ### Making a Local Clone
 
-1. Log in to GitHub and locate the [GitHub Repository](https://github.com/)
+1. Log in to GitHub and locate the [GitHub Repository](https://github.com/BreakellrZ/trader_base?tab=readme-ov-file)
 2. Under the repository name, click "Clone or download".
 3. To clone the repository using HTTPS, under "Clone with HTTPS", copy the link.
 4. Open Git Bash
