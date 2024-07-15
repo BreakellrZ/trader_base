@@ -113,6 +113,29 @@
     crossorigin="anonymous"></script>
 
   {% block extras %}
+  <!-- Preloads images -->
+  <script type="text/javascript">
+
+    var images = new Array();
+    
+    function preloadImages(){
+    
+        for (i=0; i < preloadImages.arguments.length; i++){
+    
+             images[i] = new Image();
+    
+            images[i].src = preloadImages.arguments[i];
+    
+        }
+    
+    }
+    
+    preloadImages("/static/css/img/main_hero.jpg", "/static/css/img/card_2.jpg", 
+    "/static/css/img/card.jpg", "/static/css/img/card_3.jpg", "/static/css/img/faq.jpg",
+    "/static/css/img/journal_hero.jpg", "/static/css/img/login_hero.jpg", 
+    "/static/css/img/logout_hero.jpg", "/static/css/img/post_detail_hero.jpg", "/static/css/img/sign_up_hero.jpg" );
+    
+    </script>
   {% endblock %}
 </body>
 

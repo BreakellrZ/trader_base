@@ -170,6 +170,7 @@ View User Stories for EPIC 8 : Documentation
 
 </details>
 
+FEW MORE TO ADD 
 ---
 
 
@@ -211,10 +212,39 @@ NEED TO DO LUCIDCHART
 
 ### 3.4.1. Wire-frames
 
+I used Balsamiq for my wireframes. This is what I came up for TradeBase : 
+
+- *Home page* 
+Main section of Home page : 
+![Home page wireframe](/documentation//home_balsamiq_pp4.png) ![Mobile Home wireframe](/documentation/mobile_home_balsamiq_pp4.png)
+
+What to expect & FAQ Sections : 
+![Home page part 2](/documentation/home_2_balsamiq_pp4.png) ![Home page part 2 mobile](/documentation/home_2_phone_balsamiq_pp4.png) ![Mobile home part 3](/documentation/mobile_home_3_balsamiq_pp4.png)
+
+- *Journal page* 
+![Journal page wireframes](/documentation/journal_balsamiq_pp4.png) ![Mobile Journal page wireframes](/documentation/journal_mobile_balsamiq_pp4.png)
+
+- *Inside Journal post*
+![Journal detail page wireframes](/documentation/journal_post_balsamiq_pp4.png) ![Journal detail post wireframes mobile](/documentation/journal_post_mobile_balsamiq_pp4.png)
+
+Comments section :
+![Comment section wireframes](/documentation/journal_comments_balsamiq_pp4.png) ![Comment section wireframes Mobile](/documentation/journal_comments_mobile_balsamiq_pp4.png)
+
+
 
 ## **3.5. The Surface Plane**
+I went for a 'Money heist' theme for the surface plane. I used a lot of Money Hiest pictures for the hero images on the home page and Journal page and also for the cards on the home page. (Sourced from [UnSplash](https://unsplash.com/). All free images to use).
+The reason for this type of design was because I felt like it fits into the trading theme. People Trade to make money and to get rich. To break free from the 'RatRace'. Money heist brings this vibe. Money Hiest is a spanish TV show based on robbers robbing a bank, getting their money and leaving. Just like the trading Markets people take a risk, enter the market, get there money and leave. 
 
+- *The logo* :
+ I used was from Font Awesome. It is a icon of a money note with an up arrow indicating money growth. I used a straight line between the icon and the text 'Traderbase'. ![Icon](/documentation/logo.png)
 
+- *Color Pallette* :
+ The main colors I used were blue, white, black, green, and red. These colors were all used using bootstraps color classes.
+Text was either black or white. Giving it a clean aesthetic. I used Blue for the main words, like the name of the website 'TraderBase', the names of the Journal entires on the cards, and the title of the Journal entry. Green was used sparingly, mainly to show users some sort of notification such as if they are logged in or not, or if they have deleted a comment or edited a comment they would get it shown in green text. I used green here so it would stand out to the user. Red was only used for delete buttons, to show users that their comments will be waiting for approval, and to let users know this website is not financial advice as these are all very important for the users to see. (Shown left hand side of the footer)
+
+- *Images* :
+ Images were a big part of this project. As said previously I tried to stick with a money heist theme for all my images. I wanted to give a Rebellious vibe to this project. [UnSplash](https://unsplash.com/)
 [Back to top]()
 
 ---
@@ -224,6 +254,12 @@ NEED TO DO LUCIDCHART
 
 
 ## **4.1. Future Features**
+I have a lot of Ideas for future features for TraderBase. My main two ideas include :
+
+- An api that links a calender of all the high impact news events for users to see. [ForexFactory](https://www.forexfactory.com/)
+
+-  A chat room for all users to chat and share Trade ideas with eachother.
+
 
 
 [Back to top]()
