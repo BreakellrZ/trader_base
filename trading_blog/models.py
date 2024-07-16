@@ -71,3 +71,5 @@ class Comment(models.Model):
     def __str__(self):
         return (f"This comment is from the {self.post} \n"
                 f"post - - The Author is {self.author}")
+
+

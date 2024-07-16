@@ -194,6 +194,7 @@ The scope plans contained the following features to be added.
 ## **3.3. The Structure Plane**
 
 **The structure of TraderBase is consistent, predictable, learnable, and visible, all in the best way using Bootstrap for styling and layout.**
+
 It involves a clean header at the top of the page with the TraderBase logo to the left and the navbar links to the right. The footer is at the bottom of the page, it is clean, provoding users with a Telegram link for more trades from me, and also a disclamier to users that all content shown is not financial advice.
 
 Then on the Home page we have a lovely hero image with text filling up the full screen. As the user scrools down there is another two sections, one with cards showcasing what the users can expect from TraderBase, and the last section is a FAQ area.
@@ -212,9 +213,8 @@ NEED TO DO LUCIDCHART
 
 ### 3.4.1. Wire-frames
 
-I used Balsamiq for my wireframes. This is what I came up for TradeBase : 
+**I used Balsamiq for my wireframes. This is what I came up for TradeBase :**
 
-#### *Home page* ####
 <details>
 <summary>
 Main section of Home page 
