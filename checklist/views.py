@@ -3,5 +3,5 @@ from django.http import HttpResponse
 
 # Create your views here.
 
-def checklist(request):
-    return HttpResponse('Hello world')
+def list(request):
+    return render(request, 'list_checkbox.html')
