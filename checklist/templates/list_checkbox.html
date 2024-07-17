@@ -2,20 +2,25 @@
 {% block content %}
 {% load static %}
 
+<section class="justify-content-center align-items-center">
 
-{% for list in checklist %}
 <form method="POST" action="/tradingcheck/list/">
     {%csrf_token%}
-    <div class="custom-control custom-checkbox">
-        <input type="checkbox" class="custom-control-input" id="customCheck1">
-        <label class="custom-control-label" for="customCheck1"> {{list}} </label>
-      </div>
+    {{form.title}}
+    <input type="submit" name="Create list">
+   
 </form>
-{% endfor %}
+
+{% for list in checklist %}
+<div class="custom-control custom-checkbox">
+    <input type="checkbox" class="custom-control-input" name="checkbox">
+    <label class="custom-control-label" for="customCheck1"> {{list}} </label>
+  </div>
+  {% endfor %}
 
 
 
-
+</section>
 
 
 

@@ -2,7 +2,7 @@ from django.shortcuts import render, redirect
 from django.http import HttpResponse
 
 from .models import Checkbox
-from .forms import *
+from .forms import ListForm
 
 # Create your views here.
 
@@ -17,5 +17,5 @@ def list(request):
             form.save()
         return redirect('/tradingcheck/list/')
 
-    context = {'checklist': checklist, 'forms': form}
+    context = {'checklist': checklist, 'form': form}
     return render(request, 'list_checkbox.html', context)
