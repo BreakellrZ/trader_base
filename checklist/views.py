@@ -1,7 +1,21 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from django.http import HttpResponse
+
+from .models import Checkbox
+from .forms import *
 
 # Create your views here.
 
 def list(request):
-    return render(request, 'list_checkbox.html')
+    checklist = Checkbox.objects.all()
+
+    form = ListForm()
+
+    if request.method == 'POST':
+        form = ListForm(request.POST)
+        if form.is_valid():
+            form.save()
+        return redirect('/tradingcheck/list/')
+
+    context = {'checklist': checklist, 'forms': form}
+    return render(request, 'list_checkbox.html', context)

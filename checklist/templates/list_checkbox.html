@@ -3,6 +3,15 @@
 {% load static %}
 
 
+{% for list in checklist %}
+<form method="POST" action="/tradingcheck/list/">
+    {%csrf_token%}
+    <div class="custom-control custom-checkbox">
+        <input type="checkbox" class="custom-control-input" id="customCheck1">
+        <label class="custom-control-label" for="customCheck1"> {{list}} </label>
+      </div>
+</form>
+{% endfor %}
 
 
 
