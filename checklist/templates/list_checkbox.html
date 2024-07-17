@@ -2,24 +2,34 @@
 {% block content %}
 {% load static %}
 
-<section class="justify-content-center align-items-center">
+{% load crispy_forms_tags %}
 
-<form method="POST" action="/tradingcheck/list/">
+<section class="justify-content-center align-items-center" >
+<div class="container">
+  <div class="row">
+    <div class="col">
+<!--<form method="POST" action="/tradingcheck/list/">
     {%csrf_token%}
     {{form.title}}
     <input type="submit" name="Create list">
    
+</form> -->
+
+<form id="ListForm" method="post" style="margin-top: 1.3em;">
+  {{ form | crispy }}
+  {% csrf_token %}
+  <button id="submitButton" type="submit" class="btn btn-primary btn-signup btn-lg">Submit</button>
 </form>
 
 {% for list in checklist %}
 <div class="custom-control custom-checkbox">
-    <input type="checkbox" class="custom-control-input" name="checkbox">
-    <label class="custom-control-label" for="customCheck1"> {{list}} </label>
+    <input type="checkbox" class="custom-control-input checkbox" name="checkbox">
+    <label class="custom-control-label" for="checkbox"> {{list}} </label>
   </div>
   {% endfor %}
 
-
-
+</div>
+</div>
 </section>
 
 
