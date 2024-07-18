@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block content %}
+{% load static %}
+
+<p> Are you sure you want to delete <span class="text-danger">"{{item}}" </span> ? </p>
+
+<a href="{% url 'checklist' %}" >cancel</a>
+
+
+
+{% endblock %}

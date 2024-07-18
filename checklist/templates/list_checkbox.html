@@ -7,25 +7,28 @@
 <section class="justify-content-center align-items-center" >
 <div class="container">
   <div class="row">
-    <div class="col">
-<!--<form method="POST" action="/tradingcheck/list/">
-    {%csrf_token%}
-    {{form.title}}
-    <input type="submit" name="Create list">
-   
-</form> -->
-
+    <div class="col-md-4 card mb-4 mt-3">
+      <div class="card-body">
+        {% if user.is_authenticated %}
+        <h3>Trading Tool</h3>
+        <p>{{ user.author }}'s Checklist</p>
 <form id="ListForm" method="post" style="margin-top: 1.3em;">
   {{ form | crispy }}
   {% csrf_token %}
   <button id="submitButton" type="submit" class="btn btn-primary btn-signup btn-lg">Submit</button>
 </form>
+{% else %}
+<p> Log in to use Checklist</p>
+</div>
+{% endif %}
 
 {% for list in checklist %}
 <div class="custom-control custom-checkbox">
-    <input type="checkbox" class="custom-control-input checkbox" name="checkbox">
+    <a href="{% url 'update_list' list.id %}">Update</a>
+    <a href="{% url 'delete_list' list.id %}">Delete</a>
     <label class="custom-control-label" for="checkbox"> {{list}} </label>
   </div>
+  
   {% endfor %}
 
 </div>
