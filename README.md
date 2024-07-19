@@ -26,6 +26,7 @@ My target audience is like minded traders.
 - Offer users the ability to learn from my analysis 
 - Allow users to view my Journal entries in a clear and easy to read way
 - Allow users to ask questions via a comment section
+- Get users to use the  Traders checklist to help them organize their trades with a list of things that should happen on the charts before they enter a trade.
 
 
 ### **3.1.4 Epics**
@@ -88,6 +89,7 @@ View User Stories for EPIC 2 : User Authorization and Authentication
 | [# 8](https://github.com/BreakellrZ/trader_base/issues/21) | User Story - Create Superuser |  As a developer, I can create a superuser so that I can control and view my database. |
 | [# 9](https://github.com/BreakellrZ/trader_base/issues/35) | User Story - Journal page can only be seen if user is logged in |  As a developer I can  make it so users only see the Journal page if they sign up  so that it gets people to sign up and gets them to comment on journal posts |
 | [# 10](https://github.com/BreakellrZ/trader_base/issues/34) | User Story : User can see if they are logged in or not |  As a user I can see if I am logged in so that I know if I need to log in or not |
+| [# 11](https://github.com/BreakellrZ/trader_base/issues/42) | User Story : User Story : Only be allowed to use Checklist if logged in |  As a user I can login so that I can use checklist |
 
 </details>
 
@@ -98,8 +100,10 @@ View User Stories for EPIC 3 : App Creation
 
 | Issue                                                               | Title                                  | User Story                                                                                                                 |
 | ------------------------------------------------------------------- | -------------------------------------- | -------------------------------------------------------------------------------------------------------------------------- |
-| [# 11](https://github.com/BreakellrZ/trader_base/issues/14) | User Story - Create Home app | As a Developer I can Create my first django app so that I can use this app for my home page     |
-| [# 12](https://github.com/BreakellrZ/trader_base/issues/16) | User Story - Create Trading Blog app | As a Developer I can create a rescource app so that I can use the app for an extra page on my website to display my trading blog/Journal data from my journal database. |
+| [# 12](https://github.com/BreakellrZ/trader_base/issues/14) | User Story - Create Home app | As a Developer I can Create my first django app so that I can use this app for my home page     |
+| [# 13](https://github.com/BreakellrZ/trader_base/issues/16) | User Story - Create Trading Blog app | As a Developer I can create a rescource app so that I can use the app for an extra page on my website to display my trading blog/Journal data from my journal database. |
+| [# 14](https://github.com/BreakellrZ/trader_base/issues/41) |  User Story : Create Checklist app| As a developer I can create a checklist app so that users can use a checklist for their trades. |
+
 
 </details>
 
@@ -111,10 +115,10 @@ View User Stories for EPIC 4 : DataBase Models
 
 | Issue                                                               | Title                                  | User Story                                                                                                                 |
 | ------------------------------------------------------------------- | -------------------------------------- | -------------------------------------------------------------------------------------------------------------------------- |
-| [# 13](https://github.com/BreakellrZ/trader_base/issues/19) | User Story : Create database with PostgreSQL | As a Developer I can create a postgre datbase so that I can store my data here.     |
-| [# 14](https://github.com/BreakellrZ/trader_base/issues/20) |User Story : Connect PostgreSQL database to code | As a Developer, I can connect my database to my code so that I can store my data to my database. |
-| [# 15](https://github.com/BreakellrZ/trader_base/issues/23) | User Story : Create a Journal Model| As a developer I can create a Journal model so that I can log my Journal data into my database |
-| [# 16](https://github.com/BreakellrZ/trader_base/issues/24) | User Story : Create a Comment Model| As a Developer I can create a comment datbase model so that Users can comment on Journal blog posts |
+| [# 15](https://github.com/BreakellrZ/trader_base/issues/19) | User Story : Create database with PostgreSQL | As a Developer I can create a postgre datbase so that I can store my data here.     |
+| [# 16](https://github.com/BreakellrZ/trader_base/issues/20) |User Story : Connect PostgreSQL database to code | As a Developer, I can connect my database to my code so that I can store my data to my database. |
+| [# 17](https://github.com/BreakellrZ/trader_base/issues/23) | User Story : Create a Journal Model| As a developer I can create a Journal model so that I can log my Journal data into my database |
+| [# 18](https://github.com/BreakellrZ/trader_base/issues/24) | User Story : Create a Comment Model| As a Developer I can create a comment datbase model so that Users can comment on Journal blog posts |
 
 </details>
 
@@ -125,23 +129,24 @@ View User Stories for EPIC 5 : Trading Journal
 
 | Issue                                                               | Title                                  | User Story                                                                                                                 |
 | ------------------------------------------------------------------- | -------------------------------------- | -------------------------------------------------------------------------------------------------------------------------- |
-| [# 17](https://github.com/BreakellrZ/trader_base/issues/32) | User Story : View Post Journal Content | As a user I can view the Journal content so that I can enjoy and read up on the Journal entry. |
-| [# 18](https://github.com/BreakellrZ/trader_base/issues/25) | User Story : Create Views for trading_blog app| As a developer I can code my views.py file so that I can import my models to my views and then see my database via a generic listview on live website. |
-| [# 19](https://github.com/BreakellrZ/trader_base/issues/18) | User Story : View paginated list of posts| As a site user, I can view a paginated list of posts so that I can select which post I want to view. |
-| [# 20](https://github.com/BreakellrZ/trader_base/issues/29) | User Story : Open a Journal post| As a user I can click on a Journal post so that it opens the post and shows me the posts content |
+| [# 19](https://github.com/BreakellrZ/trader_base/issues/32) | User Story : View Post Journal Content | As a user I can view the Journal content so that I can enjoy and read up on the Journal entry. |
+| [# 20](https://github.com/BreakellrZ/trader_base/issues/25) | User Story : Create Views for trading_blog app| As a developer I can code my views.py file so that I can import my models to my views and then see my database via a generic listview on live website. |
+| [# 21](https://github.com/BreakellrZ/trader_base/issues/18) | User Story : View paginated list of posts| As a site user, I can view a paginated list of posts so that I can select which post I want to view. |
+| [# 22](https://github.com/BreakellrZ/trader_base/issues/29) | User Story : Open a Journal post| As a user I can click on a Journal post so that it opens the post and shows me the posts content |
 
 </details>
 
 <details>
 <summary>
-View User Stories for EPIC 6 : User Interaction on Posts 
+View User Stories for EPIC 6 : User Interaction on Features
 </summary>
 
 | Issue                                                               | Title                                  | User Story                                                                                                                 |
 | ------------------------------------------------------------------- | -------------------------------------- | -------------------------------------------------------------------------------------------------------------------------- |
-| [# 21](https://github.com/BreakellrZ/trader_base/issues/33) | User Story : User can Create Comments  | As a user I can have crud capabilities so that the user can create, update and delete their comments |
-| [# 22](https://github.com/BreakellrZ/trader_base/issues/38) | User Story : User can Update Comments | As a user I can have crud capabilities so that the user can create their comments |
-| [# 23](https://github.com/BreakellrZ/trader_base/issues/39) | User Story : User can Delete Comments | As a user I can have crud capabilities so that the user can delete their comments |
+| [# 23](https://github.com/BreakellrZ/trader_base/issues/33) | User Story : User can Create Comments  | As a user I can have crud capabilities so that the user can create, update and delete their comments |
+| [# 24](https://github.com/BreakellrZ/trader_base/issues/38) | User Story : User can Update Comments | As a user I can have crud capabilities so that the user can create their comments |
+| [# 25](https://github.com/BreakellrZ/trader_base/issues/39) | User Story : User can Delete Comments | As a user I can have crud capabilities so that the user can delete their comments |
+| [# 26](https://github.com/BreakellrZ/trader_base/issues/43) | User Story : Users are allowed to use CRUD operations on checklist | As a user I can use crud operations so that I can update or delte items in my checklist|
 
 </details>
 
@@ -152,10 +157,10 @@ View User Stories for EPIC 7 : Style and Design of UI
 
 | Issue                                                               | Title                                  | User Story                                                                                                                 |
 | ------------------------------------------------------------------- | -------------------------------------- | -------------------------------------------------------------------------------------------------------------------------- |
-| [# 24](https://github.com/BreakellrZ/trader_base/issues/27) | User Story : Design Home page with Bootstrap | As a developer I can design the home page nicely so that the users can enjoy a nice UI and understand what the website is all about |
-| [# 25](https://github.com/BreakellrZ/trader_base/issues/28) | User Story : Design Journal page with Bootstrap|As a developer I can style the Journal page so that the users will have a nice Journal page to look at |
-| [# 26](https://github.com/BreakellrZ/trader_base/issues/37) | User Story : Custom Styling using CSS | As a developer I can use css so that I can use custom styles for my project |
-| [# 27](https://github.com/BreakellrZ/trader_base/issues/26) | User Story : Admin Panel Power Up | As a developer I can download summernote so that superusers have a better layout and format on the admin page. |
+| [# 27](https://github.com/BreakellrZ/trader_base/issues/27) | User Story : Design Home page with Bootstrap | As a developer I can design the home page nicely so that the users can enjoy a nice UI and understand what the website is all about |
+| [# 28](https://github.com/BreakellrZ/trader_base/issues/28) | User Story : Design Journal page with Bootstrap|As a developer I can style the Journal page so that the users will have a nice Journal page to look at |
+| [# 29](https://github.com/BreakellrZ/trader_base/issues/37) | User Story : Custom Styling using CSS | As a developer I can use css so that I can use custom styles for my project |
+| [# 30](https://github.com/BreakellrZ/trader_base/issues/26) | User Story : Admin Panel Power Up | As a developer I can download summernote so that superusers have a better layout and format on the admin page. |
 
 </details>
 
@@ -166,11 +171,10 @@ View User Stories for EPIC 8 : Documentation
 
 | Issue                                                               | Title                                  | User Story                                                                                                                 |
 | ------------------------------------------------------------------- | -------------------------------------- | -------------------------------------------------------------------------------------------------------------------------- |
-| [# 28](https://github.com/BreakellrZ/trader_base/issues/40) | User Story : Document everything I can | As a developer I can document everything so that users can see what TraderBase is about & get a deeper insight into the making of TraderBase |
+| [# 31](https://github.com/BreakellrZ/trader_base/issues/40) | User Story : Document everything I can | As a developer I can document everything so that users can see what TraderBase is about & get a deeper insight into the making of TraderBase |
 
 </details>
 
-FEW MORE TO ADD 
 ---
 
 
@@ -184,7 +188,7 @@ The scope plans contained the following features to be added.
 
 - **User Interaction for comments** : Users can interact with Journal entries via Comments.
 
-- **User Interaction via likes/dislikes** : Users can like or dislike each Journal entry post.
+- **User Interaction via checklist** : Users can use a checklist to organize their trades.
 
 - **FAQ** : Users can view the FAQ accordian for answers to the most asked questions about TraderBase.
 
@@ -203,7 +207,9 @@ On the Journal page, we have the same Header and footer. The main section then i
 
 Inside the journal entries we have the title shown, then under we have the watchlists and news events for this Journal entry, below that we have the main post content and then a comment section for users to interact with the posts. Comments are shown on the left while the comment form is structured on the right. Header and Footer are the same on all pages.
 
-The headers structure changes based on if the user is logged in or not. If logged in it will show 'JOURNAL' & 'LOGOUT'. If not logged in it will show 'LOGIN' & 'REGISTER'.
+Lastly we have the checklist page, with an update and delete page. All are stuctured very similar. Same Navbar and footer as all othe pages, and a main section in the middle of the page with forms for each page.
+
+The headers structure changes based on if the user is logged in or not. If logged in it will show 'JOURNAL', 'CHECKLIST' & 'LOGOUT'. If not logged in it will show 'LOGIN' & 'REGISTER'.
 
 ### **Database Schemas** ###
 NEED TO DO LUCIDCHART
@@ -257,6 +263,15 @@ Comment Section
 </summary>
 
 ![Comment section wireframes](/documentation/journal_comments_balsamiq_pp4.png) ![Comment section wireframes Mobile](/documentation/journal_comments_mobile_balsamiq_pp4.png)
+
+</details>
+
+<details>
+<summary>
+Checklist Page
+</summary>
+
+![Checklist wireframes](/documentation/checklist.png) ![Checklist wireframes Mobile](/documentation/checklist_phone.png)
 
 </details>
 
@@ -361,7 +376,9 @@ No errors found.
 |User Interaction on posts|Tested to see if text shows when a user deletes a post |Clicked into a Journal post, scrolled down to comment section - Typed in a comment and clicked submit - deleted comment - Text then shows to the user that the comment was deleted|Works as expected|
 |User Interaction on posts|Tested to see if text shows when a user comments on a post |Clicked into a Journal post, scrolled down to comment section - Typed in a comment and clicked submit. Text shown that the comment was submitted and is awaiting approval |Works as expected|
 |User Interaction on posts|Tested to see if text shows when a user updates a comment on a post |Clicked into a Journal post, scrolled down to comment section - Typed in a comment and clicked submit. - Click edit button and update comment, then click update. - Text then shown saying comment updated! |Works as expected|
-
+|User Interaction on posts|Tested to see if users can use checklist when not logged in |typed checklist url in. Did not see any option to add, update, or delete. Did not see any checklist |Works as expected|
+|User Interaction on posts|Tested to see if Update and delete buttons work |In checklist clicked update button, went to update page clicked update to confirm. Went back to checklist page clicked delete button on a checklist input. Went into delete page clicked delete button to confirm deletion. Went back to checklist page, checklist items was updated and deleted |Works as expected|
+|User Interaction on posts|Tested to see if users can add new inputs to checklist | Went to checklist page as a logged in user, Clicked input bar and put in a new input, clicked submit. |Works as expected|
 
 
 ## **5.3. Bugs**
