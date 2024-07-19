@@ -38,5 +38,9 @@ def updateList(request, pk):
 def deleteList(request, pk):
     item = Checkbox.objects.get(id=pk)
 
+    if request.method == 'POST':
+        item.delete()
+        return redirect('/tradingcheck/list/')
+
     context = {'item' : item}
     return render(request,'delete.html', context )

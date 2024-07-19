@@ -5,6 +5,7 @@
 {% url 'account_login' as login_url %}
 {% url 'account_signup' as signup_url %}
 {% url 'account_logout' as logout_url %}
+{% url 'checklist' as checklist_url %}
 
 
 <!DOCTYPE html>
@@ -63,6 +64,10 @@
             </li>
             <li class="nav-item">
               <a class="nav-link {% if request.path == logout_url %}active{% endif %}" aria-current="page"
+                href="{% url 'checklist' %}">Checklist</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link {% if request.path == logout_url %}active{% endif %}" aria-current="page"
                 href="{% url 'account_logout' %}">Logout</a>
             </li>
             {% else %}
@@ -90,7 +95,7 @@
     <div class="container my-3">
       <div class="row justify-content-center align-items-center text-center">
         <div class="col-md-4 ">
-          <p class=" text-danger">This website is for educational purposes only. Do not take this as real financial
+          <p class=" text-danger fw-bold text-uppercase">This website is for educational purposes only. Do not take this as real financial
             advice. </p>
         </div>
 
@@ -101,7 +106,7 @@
         </div>
 
         <div class="col-md-4 my-3 ">
-          <p> <i class="fa-brands fa-telegram"></i> Follow on Telegram for trade examples</p>
+          <p>  <a href="https://t.me/TradingBreakellrZ" alt="telegram link"class="fa-brands fa-telegram "></a> Follow on Telegram for trade examples</p>
         </div>
       </div>
     </div>
@@ -133,7 +138,8 @@
     preloadImages("/static/css/img/main_hero.jpg", "/static/css/img/card_2.jpg", 
     "/static/css/img/card.jpg", "/static/css/img/card_3.jpg", "/static/css/img/faq.jpg",
     "/static/css/img/journal_hero.jpg", "/static/css/img/login_hero.jpg", 
-    "/static/css/img/logout_hero.jpg", "/static/css/img/post_detail_hero.jpg", "/static/css/img/sign_up_hero.jpg" );
+    "/static/css/img/logout_hero.jpg", "/static/css/img/post_detail_hero.jpg",
+    "/static/css/img/sign_up_hero.jpg", "/static/css/img/checklist_hero.jpg" );
     
     </script>
   {% endblock %}

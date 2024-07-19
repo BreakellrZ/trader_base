@@ -4,29 +4,44 @@
 
 {% load crispy_forms_tags %}
 
-<section class="justify-content-center align-items-center" >
-<div class="container">
-  <div class="row">
-    <div class="col-md-4 card mb-4 mt-3">
+<section id="checklist_hero" >
+  {% if user.is_authenticated %}
+    <p class="text-center text-md-end text-success"><u>You are logged in as {{ user }}</u></p>
+    {% else %}
+    <p class="text-end text-center text-md-end text-success">You are not logged in</p>
+    {% endif %}
+
+<div class="container checklist my-5">
+  <div class="row justify-content-center align-items-center text-align-center">
+    <div class="col-md-8 card mb-4 mt-3 ">
       <div class="card-body">
         {% if user.is_authenticated %}
-        <h3>Trading Tool</h3>
-        <p>{{ user.author }}'s Checklist</p>
-<form id="ListForm" method="post" style="margin-top: 1.3em;">
+        <h2 class=" d-flex text-align-center justify-content-center display-5 fw-bold">Trade Checklist</h2>
+        <hr class="hr_checkbox">
+        
+<form class = "checklist" id="ListForm" method="post" style="margin-top: 1.3em;">
   {{ form | crispy }}
   {% csrf_token %}
-  <button id="submitButton" type="submit" class="btn btn-primary btn-signup btn-lg">Submit</button>
+  <button id="submitButton" type="submit" class="btn btn-success btn-signup btn-lg">Submit</button>
 </form>
 {% else %}
 <p> Log in to use Checklist</p>
 </div>
 {% endif %}
-
+<hr class="hr_checkbox"> 
 {% for list in checklist %}
-<div class="custom-control custom-checkbox">
-    <a href="{% url 'update_list' list.id %}">Update</a>
-    <a href="{% url 'delete_list' list.id %}">Delete</a>
-    <label class="custom-control-label" for="checkbox"> {{list}} </label>
+<div class="m-2">
+  <h4 class="my-3">
+  {% if list.complete == True %}
+  <strike>
+  {{list | linebreaks}} </strike>
+  {% else %}
+  <span> {{list | linebreaks}} </span>
+  {% endif %}
+  </h4>
+    <a class="btn btn-sm btn-primary" href="{% url 'update_list' list.id %}">Update</a>
+    <a class="btn btn-sm btn-danger" href="{% url 'delete_list' list.id %}">Delete</a>
+
   </div>
   
   {% endfor %}

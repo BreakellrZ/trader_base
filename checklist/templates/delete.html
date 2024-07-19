@@ -4,7 +4,12 @@
 
 <p> Are you sure you want to delete <span class="text-danger">"{{item}}" </span> ? </p>
 
-<a href="{% url 'checklist' %}" >cancel</a>
+<a href="{% url 'checklist' %}" >Cancel</a>
+
+<form method="POST" action="">
+    {% csrf_token %}
+    <button id="submitButton" type="submit" class="btn btn-danger btn-signup btn-lg">Delete</button>
+</form>
 
 
 

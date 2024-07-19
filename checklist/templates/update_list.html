@@ -1,7 +1,24 @@
-<h1>Update List</h1>
+{% extends "base.html" %}
+{% block content %}
+{% load static %}
+{% load crispy_forms_tags %}
+<section id="update_checklist">
+<div class="container my-5 py-5">
+<div class="row justify-content-center align-items-center  text-align-center">
+    <div class="col-md-8 card">
 
-<form method="POST" action="">
+        <div class="card-body">
+<h1 class="text-center">Update List</h1>
+<hr class="hr_checkbox">
+
+<form class = "checklist" id="ListForm" method="post" style="margin-top: 1.3em;">
 {% csrf_token %}
-{{form}}
+{{form | crispy}}
     <button id="submitButton" type="submit" class="btn btn-primary btn-signup btn-lg">Update</button>
 </form>
+</div>
+</div>
+</div>
+</div>
+</section>
+{% endblock %}
