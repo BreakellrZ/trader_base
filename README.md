@@ -505,8 +505,21 @@ $ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
 
 
 ### 7.3. Credits
+- I would first like to thank my code institute mentor, Brian O'Hare, for guiding me providing tips and feedback during this project.
 
+- I would like to credit Code Institute and I think therefore I blog Django walkthrough. Code Institute provided all of my education for this project. I think therefore I blog was used to help guide me throughout this project.
 
+- I would like to credit Balsamiq for the creation of my wireframes.
 
+- I would liek to thank [**Luicdchart**](https://www.lucidchart.com/pages/) for the chart for my Database Schemas
 
+- I would like to credit [**Unsplash**](https://unsplash.com/) for providing all of my card and hero pictures.
+
+-  I would like to credit [**Cloudinary**](https://console.cloudinary.com/) for the storage of static files/images.
+
+- I would like to credit - [**FavIcon.io**](https://favicon.io/favicon-converter/). It was used to compress favicon.
+
+- I would like to credit [**W3Schools**](https://www.w3schools.com/), for useful information.
+ 
+ - I would like to credit [**Dennis Ivy YouTube**](https://www.youtube.com/watch?v=4RWFvXDUmjo&ab_channel=DennisIvy) for helping me with the checklist.
 [Back to top]()
