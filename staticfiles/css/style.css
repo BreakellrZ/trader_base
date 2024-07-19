@@ -84,6 +84,7 @@ a {
     border: 1px dashed black;
 }
 
+
 /* Jounral detail page style */
 #journal_detail {
     position: relative;
@@ -158,6 +159,26 @@ a {
     background: url(/static/css/img/sign_up_hero.jpg) no-repeat center center fixed;
     background-size: cover;
 }
+
+/* Checklist page style */
+hr.hr_checkbox {
+    border: 1px solid rgb(92, 92, 92);
+}
+
+#checklist_hero {
+    min-height:100vh;
+    position: relative;
+    overflow: hidden;
+    isolation: isolate;
+    background: url(/static/css/img/checklist_hero.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+
+#update_checklist {
+    height:80vh;
+}
+
+
 
 
 /* Media Query for max width of 752px */
