@@ -5,9 +5,14 @@ from django.contrib.auth.decorators import login_required
 from .models import Checkbox
 from .forms import ListForm
 
-# Create your views here.
+
+# View checklist
 @login_required
 def list(request):
+    """
+    Display Checklist
+    Each user sees their own checklist
+    """
     checklist = Checkbox.objects.filter(author=request.user)
     form = ListForm()
 
@@ -19,10 +24,17 @@ def list(request):
             checkbox.save()
         return redirect('/tradingcheck/list/')
 
-    context = {'checklist': checklist, 'form': form,}
+    context = {'checklist': checklist, 'form': form}
     return render(request, 'list_checkbox.html', context)
 
+
+# View to update checklist inputs
 def updateList(request, pk):
+    """
+    When user clickes update, goes to update_list.html.
+    Can update from there.
+    Displays update message once redirected back to /tradingcheck/list page.
+    """
     list = Checkbox.objects.get(id=pk)
 
     form = ListForm(instance=list)
@@ -31,20 +43,29 @@ def updateList(request, pk):
         form = ListForm(request.POST, instance=list)
         if form.is_valid():
             form.save()
-            messages.add_message(request, messages.SUCCESS, 'Checklist Updated!')
+            messages.add_message(
+                request, messages.SUCCESS, 'Checklist Updated!')
             return redirect('/tradingcheck/list/')
 
-    context = {'form' : form}
+    context = {'form': form}
 
     return render(request, 'update_list.html', context)
 
+
+# View to delete checklist inputs
 def deleteList(request, pk):
+    """
+    When user clicks delete button,
+    Goes to delete.html page, where users can delete an input.
+    Displays delete message once redirected back to /tradingcheck/list page.
+    """
     item = Checkbox.objects.get(id=pk)
 
     if request.method == 'POST':
         item.delete()
-        messages.add_message(request, messages.SUCCESS, 'Checklist input deleted!')
+        messages.add_message(
+            request, messages.SUCCESS, 'Checklist input deleted!')
         return redirect('/tradingcheck/list/')
 
-    context = {'item' : item}
-    return render(request,'delete.html', context )
+    context = {'item': item}
+    return render(request, 'delete.html', context)

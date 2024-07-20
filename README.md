@@ -1,6 +1,6 @@
 # ***TraderBase - Colin Breakell - Portfolio Project 4***
 
-- TraderBase is a website for Forex traders who would like to follow along with a Funded ICT Trader. I decided to make this website for all ICT traders out there who would like to gain information and knowledge, while following my journey via a Journal blog. In my Journal I will be providing daily and weekly analysis. (ICT trading is a style of trading from a trader called ICT) Each blog post will contain chart examples and text explaining what my thought proccess is for each day and each week. I will be showing trade examples, useful information, and trading models for users who signup. I wanted to give a 'Money Heist' vibe to my website beacuse I believe trading is like a money heist. We are entering the market ready to start a heist and take money out of the market for ourselves.
+- TraderBase is a website for Forex traders who would like to follow along with a Funded ICT Trader. I decided to make this website for all ICT traders out there who would like to gain information and knowledge, while following my journey via a Journal blog. In my Journal I will be providing daily and weekly analysis. (ICT trading is a style of trading from a trader called ICT) Each blog post will contain chart examples and text explaining what my thought proccess is for each day and each week. I will be showing trade examples, useful information, and trading models for users who signup. I wanted to give a 'Money Heist' vibe to my website beacuse I believe trading is like a money heist. We are entering the market ready to start a heist and take money out of the market for ourselves. Alongside the Journal, there is a checklist feature for all users who have signed up. This checklist is to be used for your trades. Each user has their own indivdual checklist they can use. All users have to do is go to the checklist page, and enter in what they believe needs to be checked off before they enter a trade.
 
 
 ![Am I responsive image](documentation/am_i_responsive_pp4.png)
@@ -340,6 +340,14 @@ I have a lot of Ideas for future features for TraderBase. My main two ideas incl
 | home           | \`apps.py\`     | <span style="color:green;">PASS</span>                   |
 | home           | \`admin.py\`    | <span style="color:green;">PASS</span>                   |
 | home           | \`init.py\`     | <span style="color:green;">PASS</span>                   |
+| checklist      | \`views.py\`    | <span style="color:green;">PASS</span>                   |
+| checklist      | \`urls.py\`     | <span style="color:green;">PASS</span>                   |
+| checklist      | \`tests.py\`    | <span style="color:green;">PASS</span>                   |
+| checklist      | \`models.py\`   | <span style="color:green;">PASS</span>                   |
+| checklist      | \`apps.py\`     | <span style="color:green;">PASS</span>                   |
+| checklist      | \`admin.py\`    | <span style="color:green;">PASS</span>                   |
+| checklist      | \`init.py\`     | <span style="color:green;">PASS</span>                   |
+
 
 - W3C CSS VALIDAOR : 
 No errors found.
@@ -370,15 +378,16 @@ No errors found.
 |Admin Panel|Tested to see if Journal blog posts were not uploaded to the journal page if status was set to 'draft' |Went to admin panel - clicked on add Journals - Added content to Journal - Put status as draft - hit save - checked to see if post was uploaded or not to journal page. Post was not uploaded |Works as expected|
 |Admin Panel|Tested to see if each part of my Journal model worked and was visible for users to see once published. These include Excerpt, title, and watchlist on post.html Journal page - Title, main content, watchlist, news events,specific news, and images on post_detail.html page|Created new Journal post and included each part of Journal model. Clicked on Journal page and clicked into new post.|Works as expected|
 |Admin Panel|Tested to see if Superuser can successfully approve comments made by users |Went to admin panel- clicked on Comments - clicked on each comment - Clicked the approve box to approve the comment - clicked save -  checked comment section on live site to see if comment had been approved|Works as expected|
-|User Interaction on posts|Tested to see if users can comment on Journal posts|Clicked into a Journal post, scrolled down to comment section - Typed in a comment and clicked submit|Works as expected|
-|User Interaction on posts|Tested to see if users can update their comment on Journal posts|Clicked into a Journal post, scrolled down to comment section - Typed in a comment and clicked submit, then clicked edit button on comment - typed in new comment and clicked update button - comment updated |Works as expected|
-|User Interaction on posts|Tested to see if users can delete their comment on Journal posts and if a modal pops up when user clicks delete to confirm deletion|Clicked into a Journal post, scrolled down to comment section - Typed in a comment and clicked submit - Found comment and clicked delete - modal pops up, clicked delete button to confirm deletion |Works as expected|
-|User Interaction on posts|Tested to see if text shows when a user deletes a post |Clicked into a Journal post, scrolled down to comment section - Typed in a comment and clicked submit - deleted comment - Text then shows to the user that the comment was deleted|Works as expected|
-|User Interaction on posts|Tested to see if text shows when a user comments on a post |Clicked into a Journal post, scrolled down to comment section - Typed in a comment and clicked submit. Text shown that the comment was submitted and is awaiting approval |Works as expected|
-|User Interaction on posts|Tested to see if text shows when a user updates a comment on a post |Clicked into a Journal post, scrolled down to comment section - Typed in a comment and clicked submit. - Click edit button and update comment, then click update. - Text then shown saying comment updated! |Works as expected|
-|User Interaction on posts|Tested to see if users can use checklist when not logged in |typed checklist url in. Did not see any option to add, update, or delete. Did not see any checklist |Works as expected|
-|User Interaction on posts|Tested to see if Update and delete buttons work |In checklist clicked update button, went to update page clicked update to confirm. Went back to checklist page clicked delete button on a checklist input. Went into delete page clicked delete button to confirm deletion. Went back to checklist page, checklist items was updated and deleted |Works as expected|
-|User Interaction on posts|Tested to see if users can add new inputs to checklist | Went to checklist page as a logged in user, Clicked input bar and put in a new input, clicked submit. |Works as expected|
+|User Interaction on features|Tested to see if users can comment on Journal posts|Clicked into a Journal post, scrolled down to comment section - Typed in a comment and clicked submit|Works as expected|
+|User Interaction on features|Tested to see if users can update their comment on Journal posts|Clicked into a Journal post, scrolled down to comment section - Typed in a comment and clicked submit, then clicked edit button on comment - typed in new comment and clicked update button - comment updated |Works as expected|
+|User Interaction on features|Tested to see if users can delete their comment on Journal posts and if a modal pops up when user clicks delete to confirm deletion|Clicked into a Journal post, scrolled down to comment section - Typed in a comment and clicked submit - Found comment and clicked delete - modal pops up, clicked delete button to confirm deletion |Works as expected|
+|User Interaction on features|Tested to see if text shows when a user deletes a post |Clicked into a Journal post, scrolled down to comment section - Typed in a comment and clicked submit - deleted comment - Text then shows to the user that the comment was deleted|Works as expected|
+|User Interaction on features|Tested to see if text shows when a user comments on a post |Clicked into a Journal post, scrolled down to comment section - Typed in a comment and clicked submit. Text shown that the comment was submitted and is awaiting approval |Works as expected|
+|User Interaction on features|Tested to see if text shows when a user updates a comment on a post |Clicked into a Journal post, scrolled down to comment section - Typed in a comment and clicked submit. - Click edit button and update comment, then click update. - Text then shown saying comment updated! |Works as expected|
+|User Interaction on features|Tested to see if users can use checklist when not logged in |typed checklist url in. Did not see any option to add, update, or delete. Did not see any checklist |Works as expected|
+|User Interaction on features|Tested to see if Update and delete buttons work |In checklist clicked update button, went to update page clicked update to confirm. Went back to checklist page clicked delete button on a checklist input. Went into delete page clicked delete button to confirm deletion. Went back to checklist page, checklist items was updated and deleted |Works as expected|
+|User Interaction on features|Tested to see if users can add new inputs to checklist | Went to checklist page as a logged in user, Clicked input bar and put in a new input, clicked submit. |Works as expected|
+|User Interaction on features|Tested to see if each individual user had their own checklist | Logged in as two seperate users, went to checklist page, added new inputs to checklist seperatly for each user, updated and deleted some inputs. Both users had different checklists. |Works as expected|
 
 
 ## **5.3. Bugs**
@@ -399,6 +408,12 @@ Others were more complex.
 
 ![Server 500 error](documentation/value_error_bug.png)
 </details>
+
+- For the checklist, It took me a while to figure out a bug as to why the checklist was not seperate for each individual user. I tried using checklist = Checkbox.objects.filter(author=request.user) in my Checklist function, which was correct but I needed to not save and commit the changes for all users, it needed to be for each individual user. I did this by using - 
+    if form.is_valid():
+        checkbox = form.save(commit=False)
+        checkbox.author = request.user
+        checkbox.save()
 
 
 ---
