@@ -9,4 +9,4 @@ class ListForm(forms.ModelForm):
 
     class Meta:
         model = Checkbox
-        fields = ('title','complete')
+        fields = ('title','complete',)

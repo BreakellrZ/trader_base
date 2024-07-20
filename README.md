@@ -511,7 +511,7 @@ $ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
 
 - I would like to credit Balsamiq for the creation of my wireframes.
 
-- I would liek to thank [**Luicdchart**](https://www.lucidchart.com/pages/) for the chart for my Database Schemas
+- I would like to thank [**Luicdchart**](https://www.lucidchart.com/pages/) for the chart for my Database Schemas.
 
 - I would like to credit [**Unsplash**](https://unsplash.com/) for providing all of my card and hero pictures.
 
