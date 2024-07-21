@@ -31,14 +31,13 @@
           <hr class="hr_checkbox">
           {% for list in checklist %}
           <div class="m-2">
-            <h4 class="my-3">
+            <div class="my-3 fs-4">
               {% if list.complete == True %}
-              <strike>
-                {{list | linebreaks}} </strike>
+                <div class="text-decoration-line-through">{{list | linebreaks}} </div>
               {% else %}
-              <span> {{list | linebreaks}} </span>
+               {{list | linebreaks}} 
               {% endif %}
-            </h4>
+              </div>
             <a class="btn btn-sm btn-primary" href="{% url 'update_list' list.id %}">Update</a>
             <a class="btn btn-sm btn-danger" href="{% url 'delete_list' list.id %}">Delete</a>
           </div>
@@ -62,6 +61,8 @@
           </div>
           {% endif %}
         </div>
+      </div>
+      </div>
       </div>
 </section>
 

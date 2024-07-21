@@ -20,6 +20,7 @@ ul {
     color:rgb(177, 5, 5);
 }
 
+
 /* Button style */
 .btn {
     z-index: 99;
@@ -181,8 +182,6 @@ hr.hr_checkbox {
 #update_checklist {
     height:80vh;
 }
-
-
 
 
 /* Media Query for max width of 752px */

@@ -43,7 +43,7 @@ ul {
     opacity: .2;
     filter: brightness(0.4);
 
-    background: url(/static/css/img/main_hero.jpg) no-repeat center center fixed;
+    background: url(/static/css/img/main_hero.webp) no-repeat center center fixed;
     background-size: cover;
 }
 
@@ -61,7 +61,7 @@ ul {
 
 #faq {
     position: relative;
-    background: url(/static/css/img/faq.jpg) no-repeat center center fixed;
+    background: url(/static/css/img/faq.webp) no-repeat center center fixed;
     background-size: cover;
 }
 
@@ -80,7 +80,7 @@ ul {
     opacity: .2;
     filter: brightness(0.4);
 
-    background: url(/static/css/img/journal_hero.jpg) no-repeat center center fixed;
+    background: url(/static/css/img/journal_hero.webp) no-repeat center center fixed;
     background-size: cover;
 }
 
@@ -103,7 +103,7 @@ ul {
     opacity: .2;
     filter: brightness(0.4);
 
-    background: url(/static/css/img/post_detail_hero.jpg) no-repeat center center fixed;
+    background: url(/static/css/img/post_detail_hero.webp) no-repeat center center fixed;
     background-size: cover;
 }
 
@@ -122,7 +122,7 @@ ul {
     opacity: .2;
     filter: brightness(0.4);
 
-    background: url(/static/css/img/login_hero.jpg) no-repeat center center fixed;
+    background: url(/static/css/img/login_hero.webp) no-repeat center center fixed;
     background-size: cover;
 }
 
@@ -141,7 +141,7 @@ ul {
     opacity: .2;
     filter: brightness(0.4);
 
-    background: url(/static/css/img/logout_hero.jpg) no-repeat center center fixed;
+    background: url(/static/css/img/logout_hero.webp) no-repeat center center fixed;
     background-size: cover;
 }
 
@@ -160,7 +160,7 @@ ul {
     opacity: .2;
     filter: brightness(0.4);
 
-    background: url(/static/css/img/sign_up_hero.jpg) no-repeat center center fixed;
+    background: url(/static/css/img/sign_up_hero.webp) no-repeat center center fixed;
     background-size: cover;
 }
 
@@ -174,15 +174,13 @@ hr.hr_checkbox {
     position: relative;
     overflow: hidden;
     isolation: isolate;
-    background: url(/static/css/img/checklist_hero.jpg) no-repeat center center fixed;
+    background: url(/static/css/img/checklist_hero.webp) no-repeat center center fixed;
     background-size: cover;
 }
 
 #update_checklist {
-    height:80vh;
+    min-height:80vh;
 }
-
-
 
 
 /* Media Query for max width of 752px */
