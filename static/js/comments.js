@@ -1,3 +1,4 @@
+/** I think therefore I blog code for comments */
 const editButtons = document.getElementsByClassName("btn-edit");
 const commentText = document.getElementById("id_body");
 const commentForm = document.getElementById("commentForm");
@@ -6,7 +7,6 @@ const submitButton = document.getElementById("submitButton");
 const deleteModal = new bootstrap.Modal(document.getElementById("deleteModal"));
 const deleteButtons = document.getElementsByClassName("btn-delete");
 const deleteConfirm = document.getElementById("deleteConfirm");
-
 
 
 /**
@@ -47,5 +47,3 @@ for (let button of deleteButtons) {
         deleteModal.show();
     });
 }
-
-

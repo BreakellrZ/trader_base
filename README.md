@@ -178,6 +178,8 @@ View User Stories for EPIC 8 : Documentation
 
 ---
 
+[Back to top]()
+
 
 ## **3.2. The Scope Plane**
 
@@ -229,6 +231,8 @@ The fields for the checklist are as follows - title: for the input char field so
 
 
 ![Database Schemas](/documentation/data_schemas.png)
+
+[Back to top]()
 
 
 ## **3.4. The Skeleton Plane**
@@ -290,6 +294,8 @@ Checklist Page
 ![Checklist wireframes](/documentation/checklist.png) ![Checklist wireframes Mobile](/documentation/checklist_phone.png)
 
 </details>
+
+[Back to top]()
 
 
 ## **3.5. The Surface Plane**
@@ -365,14 +371,49 @@ I have a lot of Ideas for future features for TraderBase. My main two ideas incl
 | checklist      | \`init.py\`     | <span style="color:green;">PASS</span>                   |
 
 
-- W3C CSS VALIDAOR : 
-No errors found.
+ #### **W3C CSS VALIDAOR :** ####
+ - No errors found.
 
-- W3C HTML Validator :
+![Css validation](/documentation/css_validator_pp4.png)
 
-- JS Validation 
+ #### **W3C HTML Validator :** ####
 
-- Lighthouse scores
+ - Index.html : No errors found
+
+![index.html validator](/documentation/index.html_validator.png)
+ - Delete.html : No erros found
+
+ - list_checkbox.html : No errors found
+ 
+ ![Checkbox html validator](/documentation/checklist_html_validator.png)
+
+ - update_list.html : No errors found
+
+ ![Update html validator](/documentation/update_html_validator.png)
+
+ - base.html : No errors found 
+
+ - post_detail.html : **Attribute errors pop up. EXPLAIN HERE**
+
+ - post.html : No errors found 
+
+ ![Journal post html validator](/documentation/journal_html_validator.png)
+
+ - login.html : No errors found
+
+ - logout.html : No erros found
+
+ - Signup.html : 4 erros found - **All due to Allauth recent releases.** I can not fix these errors as its due to the framework.
+
+ ![Signup erros due to Allauth.](/documentation/signup_allauth_errors.png)
+
+
+ #### **JS Validation :** ####
+ No erros in JS code.
+
+ ![Js validator](/documentation/js_validator_pp4.png)
+
+ #### **Lighthouse scores :** ####
 
 
 ## **5.2. Testing**
@@ -431,7 +472,12 @@ Others were more complex.
         checkbox.author = request.user
         checkbox.save()
 
+- There was a couple of erros/bugs found during the html validation. One of these was for the post_detail page. I was getting 'Error: Attribute comment_id not allowed on element button at this point.' for each comment that was registered. **Explain THISSSSS**
 
+![Post_detail error/bug](/documentation/post_detail_bug.png)
+
+
+[Back to top]()
 ---
 
 # **6. Deployment**
