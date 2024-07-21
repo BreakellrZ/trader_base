@@ -16,6 +16,10 @@ a {
     position: relative;
 }
 
+ul {
+    color:rgb(177, 5, 5);
+}
+
 /* Button style */
 .btn {
     z-index: 99;

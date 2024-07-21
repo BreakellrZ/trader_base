@@ -212,7 +212,22 @@ Lastly we have the checklist page, with an update and delete page. All are stuct
 The headers structure changes based on if the user is logged in or not. If logged in it will show 'JOURNAL', 'CHECKLIST' & 'LOGOUT'. If not logged in it will show 'LOGIN' & 'REGISTER'.
 
 ### **Database Schemas** ###
-NEED TO DO LUCIDCHART
+#### **The database schema for TraderBase includes the following models:** ####
+
+- **The User model** which stores all user information. 
+This was already pre-built by django using 'from django.contrib.auth.models import User' in models.py. From looking at the django documentation I can see the fields include: Username, first_name, last_name, email, password, groups, user_permissions, is_staff, is_active, is_superuser, last_login, date_joined.
+
+- **The Journal model** which stores data for each of my journal posts.
+The fields involved here are - Author which is linked to the user model, title: for the title of each Journal post, content: for the main part of my Journal entry, date, status: to see if the Journal post is approved for posting, excerpt: users see a little sneak peak of what the Journal entry is all about, watchlist: a watchlist of which currencies we will be talking about in each Journal post, news_events and news: News_events involves which specific news event is involved in each Journal post and news is to tell users if there was high impact, medium impact, or no news for each Journal post. A cloudinary chart_image: For images of charts.
+
+- **The Comment model** to store data for users comments:
+The comment model involves - post: which is to connect to the Journal specific post to comment on, Author: which links the comment to the specific user who is commenting, body: which is the text that goes into the body of the comment, approved: Comments need to be approved to be posted, and created_on to make sure the newest comments are filtered to be posted at the top of the comment section.
+
+- **The Checkbox model** to store data for the checklist feature:
+The fields for the checklist are as follows - title: for the input char field so users can add new inputs to add to their checklist, slug, complete: this is used so users can check of their checklist inputs by clicking the complete button and it will store that the input is complete and show a strike on through that specific input on the frontend for users to see. created: the newest inputs will be on top, author: Foreignkey connect to user, this is used so that each user sees their own individual checklist and each new input is stored to their specific checklist.
+
+
+![Database Schemas](/documentation/data_schemas.png)
 
 
 ## **3.4. The Skeleton Plane**
@@ -526,7 +541,7 @@ $ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
 
 - I would like to credit Balsamiq for the creation of my wireframes.
 
-- I would like to thank [**Luicdchart**](https://www.lucidchart.com/pages/) for the chart for my Database Schemas.
+- I would like to thank [**Drawsql**](https://drawsql.app/) for the chart for my Database Schemas.
 
 - I would like to credit [**Unsplash**](https://unsplash.com/) for providing all of my card and hero pictures.
 
