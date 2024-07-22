@@ -88,6 +88,8 @@ Must haves were Crucial for this project. Should-haves were I should have this b
 
 **Won't-Have**: Features that are explicitly excluded from the project scope.
 
+**I used T-shirt sizing for comparative sizing rather than actual story points, I felt this was a better way visually for me as it was just myself working on this project. These ranged from small to xtra large for each User Story.**
+
 ### List of user stories sorted by Epic :
 
 <details>
@@ -547,6 +549,23 @@ I have a lot of Ideas for future features for TraderBase. My main two ideas incl
  ![Js validator](/documentation/js_validator_pp4.png)
 
  #### **Lighthouse scores :** ####
+
+ - Home page scores all above 90: 
+
+ ![Lighthouse score homepage](/documentation/home_lighthouse_pp4.png)
+
+ - Journal page scores are all above 90:
+
+ - Journal post page scores are all above 90:
+
+ - Checklist page scores are all above 90:
+
+ - Logout page scores are all above 90:
+
+ - Login page scores are all above 90:
+
+ - Sign up page scores are all above 90:
+
 
 
 ## **5.2. Testing**
