@@ -7,6 +7,34 @@
 ![Am I responsive image](documentation/am_i_responsive_pp4.png)
 
 # **2. Table of content**
+- [3. UX ](https://github.com/BreakellrZ/trader_base?tab=readme-ov-file#3-user-experience-ux)
+- [3.1. The Strategy Plane](https://github.com/BreakellrZ/trader_base?tab=readme-ov-file#31-the-strategy-plane)
+- [3.1.1 The Idea](https://github.com/BreakellrZ/trader_base?tab=readme-ov-file#311-the-idea)
+- [3.1.2 The Ideal User](https://github.com/BreakellrZ/trader_base?tab=readme-ov-file#312-the-ideal-user)
+- [3.1.3 Site Goals](https://github.com/BreakellrZ/trader_base?tab=readme-ov-file#313-site-goals)
+- [3.1.4 Epics](https://github.com/BreakellrZ/trader_base?tab=readme-ov-file#314-epics)
+- [3.1.5 User stories](https://github.com/BreakellrZ/trader_base?tab=readme-ov-file#315-user-stories)
+- [3.2. The Scope Plane](https://github.com/BreakellrZ/trader_base?tab=readme-ov-file#32-the-scope-plane)
+- [3.3. The Structure Plane](https://github.com/BreakellrZ/trader_base?tab=readme-ov-file#33-the-structure-plane)
+- [3.4. The Skeleton Plane](https://github.com/BreakellrZ/trader_base?tab=readme-ov-file#34-the-skeleton-plane)
+- [3.4.1. Wire-frames](https://github.com/BreakellrZ/trader_base?tab=readme-ov-file#341-wire-frames)
+- [3.5. The Surface Plane](https://github.com/BreakellrZ/trader_base?tab=readme-ov-file#35-the-surface-plane)
+- [4. Features](https://github.com/BreakellrZ/trader_base?tab=readme-ov-file#4-features)
+- [4.1 Future Features](https://github.com/BreakellrZ/trader_base?tab=readme-ov-file#41-future-features)
+- [5. Validation, Testing & Bugs](https://github.com/BreakellrZ/trader_base?tab=readme-ov-file#5-validation-testing--bugs)
+- [5.1 Validation](https://github.com/BreakellrZ/trader_base?tab=readme-ov-file#51-validation)
+- [5.2 Testing](https://github.com/BreakellrZ/trader_base?tab=readme-ov-file#52-testing)
+- [5.3 Bugs](https://github.com/BreakellrZ/trader_base?tab=readme-ov-file#53-bugs)
+- [6. Deployment](https://github.com/BreakellrZ/trader_base?tab=readme-ov-file#6-deployment)
+- [6.1. Deployment with Heroku](https://github.com/BreakellrZ/trader_base?tab=readme-ov-file#deployment-with-heroku)
+- [6.2. Database setup](https://github.com/BreakellrZ/trader_base?tab=readme-ov-file#database-setup)
+- [6.3. Fork The Repository](https://github.com/BreakellrZ/trader_base?tab=readme-ov-file#fork-the-repository)
+- [6.4. Making a Local Clone](https://github.com/BreakellrZ/trader_base?tab=readme-ov-file#making-a-local-clone)
+- [7. Technologies & Credits](https://github.com/BreakellrZ/trader_base?tab=readme-ov-file#7-technologies--credits)
+- [7.1. Technologies used to develop and deploy this project](https://github.com/BreakellrZ/trader_base?tab=readme-ov-file#71-technologies-used-to-develop-and-deploy-this-project)
+- [7.2. Languages Used](https://github.com/BreakellrZ/trader_base?tab=readme-ov-file#languages-used)
+- [7.3. Python Modules Imported](https://github.com/BreakellrZ/trader_base?tab=readme-ov-file#72-python-modules-imported)
+- [7.4. Credits](https://github.com/BreakellrZ/trader_base?tab=readme-ov-file#73-credits)
 
 # **3. User Experience (UX)**
 
@@ -485,31 +513,32 @@ I have a lot of Ideas for future features for TraderBase. My main two ideas incl
  - Index.html : No errors found
 
 ![index.html validator](/documentation/index.html_validator.png)
- - Delete.html : No erros found
-
- - list_checkbox.html : No errors found
  
+ - list_checkbox.html : No errors found
+
  ![Checkbox html validator](/documentation/checklist_html_validator.png)
 
  - update_list.html : No errors found
 
  ![Update html validator](/documentation/update_html_validator.png)
 
- - base.html : No errors found 
+- post.html : No errors found 
+
+ ![Journal post html validator](/documentation/journal_html_validator.png)
+
+ - Signup.html : 4 erros found - **All due to Allauth recent releases.** I can not fix these errors as its due to the framework.
+
+ ![Signup erros due to Allauth.](/documentation/signup_allauth_errors.png)
 
  - post_detail.html : **Attribute errors pop up. EXPLAIN HERE**
 
- - post.html : No errors found 
-
- ![Journal post html validator](/documentation/journal_html_validator.png)
+ - base.html : No errors found 
 
  - login.html : No errors found
 
  - logout.html : No erros found
 
- - Signup.html : 4 erros found - **All due to Allauth recent releases.** I can not fix these errors as its due to the framework.
-
- ![Signup erros due to Allauth.](/documentation/signup_allauth_errors.png)
+ - Delete.html : No errors found
 
 
  #### **JS Validation :** ####
@@ -577,16 +606,19 @@ Others were more complex.
         checkbox.save()
 
 - There was a couple of erros/bugs found during the html validation. One of these was for the post_detail page. I was getting 'Error: Attribute comment_id not allowed on element button at this point.' for each comment that was registered. **Explain THISSSSS**
+<details>
+<summary> Error: Attribute comment_id not allowed on element button at this point</summary>
 
 ![Post_detail error/bug](/documentation/post_detail_bug.png)
+</details>
 
 
 [Back to top]()
----
+
 
 # **6. Deployment**
 
-### Deployment with Heroku ###
+### 6.1. Deployment with Heroku ###
 These are the steps I took to deploy my project to Heroku.
 
 - Log into Heroku or create an account.
@@ -601,7 +633,7 @@ These are the steps I took to deploy my project to Heroku.
 - Once the build is finished there should be a message saying 'Your app was successfully deployed' with a 'View' button.
 When I click on 'View' this opened the application.
 
-### Database setup ###
+### 6.2. Database setup ###
 - Went to [Code Institutes Database provider](https://dbs.ci-dbs.net/).
 - Submitted email address. 
 - Got Database URL via email. 
@@ -611,14 +643,14 @@ When I click on 'View' this opened the application.
 }
 - Put DATABASE_URL key and database url as value in Heroku Config Vars.
 
-### Fork The Repository
+### 6.3. Fork The Repository ###
 
 1. Go to the GitHub repository
 2. Click on Fork button in the upper right-hand corner
 3. Edit the repository name and description if desired
 4. Click the green create fork button
  
- ### Making a Local Clone
+ ### 6.4. Making a Local Clone ###
 
 1. Log in to GitHub and locate the [GitHub Repository](https://github.com/BreakellrZ/trader_base?tab=readme-ov-file)
 2. Under the repository name, click "Clone or download".
@@ -637,9 +669,9 @@ $ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
 
 ---
 
-## **7. Technologies & Credits**
+## **7. Technologies & Credits** ###
 
-### 7.1. Technologies used to develop and deploy this project
+### 7.1. Technologies used to develop and deploy this project ###
 
 - [Bootstrap](https://getbootstrap.com/) was used to style and make website responsive.
 - [VS Code](https://code.visualstudio.com/) was used to code the website locally.
@@ -657,7 +689,7 @@ $ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
 - [Cloudinary](https://cloudinary.com/) was used to store static files and images.
 - [Heroku](https://heroku.com/) was the hosting provider used.
 
-### Languages Used
+### 7.2. Languages Used ###
 
 - HTML
 - CSS
@@ -666,7 +698,7 @@ $ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
 - Python
 - Django
 
-### 7.2. Python Modules Imported 
+### 7.3. Python Modules Imported ###
 
 - [Django-allauth](https://pypi.org/project/django-allauth/) 
 
@@ -685,7 +717,7 @@ $ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
 - [Cloudinary](https://pypi.org/project/cloudinary/1.27.0/) 
 
 
-### 7.3. Credits
+### 7.4. Credits ###
 - I would first like to thank my code institute mentor, Brian O'Hare, for guiding me providing tips and feedback during this project.
 
 - I would like to credit Code Institute and I think therefore I blog Django walkthrough. Code Institute provided all of my education for this project. I think therefore I blog was used to help guide me throughout this project.
