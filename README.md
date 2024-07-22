@@ -556,15 +556,27 @@ I have a lot of Ideas for future features for TraderBase. My main two ideas incl
 
  - Journal page scores are all above 90:
 
- - Journal post page scores are all above 90:
+ ![Trading Journal lighthouse](/documentation/trading_journal_lighthouse.png)
 
- - Checklist page scores are all above 90:
+ - Journal post page scores are all above 90 bar best practices which has a score of 78. Due to time retraints I could not get this up above 90 before the deadline. Error says "Does not use HTTPS". This was flagged due to the images being shared from cloudinary :
+
+ ![Journal post lighthouse](/documentation/trading_journal_post_lighthouse.png)
+
+ - Checklist page scores are all above 95:
+
+ ![Checklist lighthouse](/documentation/checklist_lighthouse.png)
 
  - Logout page scores are all above 90:
 
- - Login page scores are all above 90:
+ ![Logout lighthouse](/documentation/logout_lighthouse.png)
 
- - Sign up page scores are all above 90:
+ - Login page scores are all above 95:
+
+ ![Lighthouse Sign in](/documentation/sign_in_lighthouse.png)
+
+ - Sign up page scores are all above 95:
+
+ ![Lighthouse score signup](/documentation/sign_up_lighthouse.png)
 
 
 
