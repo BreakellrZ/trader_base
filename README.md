@@ -511,6 +511,7 @@ I have a lot of Ideas for future features for TraderBase. My main two ideas incl
 ![Css validation](/documentation/css_validator_pp4.png)
 
  #### **W3C HTML Validator :** ####
+ All were tested in incognito mode on the deployed website.
 
  - Index.html : No errors found
 
@@ -559,7 +560,7 @@ I have a lot of Ideas for future features for TraderBase. My main two ideas incl
 
  ![Trading Journal lighthouse](/documentation/trading_journal_lighthouse.png)
 
- - Journal post page scores are all above 90 bar best practices which has a score of 78. Due to time retraints I could not get this up above 90 before the deadline. Error says "Does not use HTTPS". This was flagged due to the images being shared from cloudinary :
+ - Journal post page scores are all above 90 bar best practices which has a score of 78. Due to time retraints I could not get this up above 90 before the deadline. Error says "Does not use HTTPS". This was flagged due to the images being shared from cloudinary. **This was not my code that was causing the issue,** so I could not fix it with the time I had left :
 
  ![Journal post lighthouse](/documentation/trading_journal_post_lighthouse.png)
 
@@ -637,7 +638,7 @@ Others were more complex.
         checkbox.author = request.user
         checkbox.save()
 
-- There was a couple of erros/bugs found during the html validation. One of these was for the post_detail page. I was getting 'Error: Attribute comment_id not allowed on element button at this point.' for each comment that was registered. **Explain THISSSSS**
+- There was a couple of erros/bugs found during the html validation. One of these was for the post_detail page. I was getting 'Error: Attribute comment_id not allowed on element button at this point.' for each comment that was registered. I figured out that I needed to use data-comment_id instead of comment_id for the button element.
 <details>
 <summary> Error: Attribute comment_id not allowed on element button at this point</summary>
 
