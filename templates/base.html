@@ -107,7 +107,7 @@
         </div>
 
         <div class="col-md-4 my-3 ">
-          <p> <a href="https://t.me/TradingBreakellrZ" class="fa-brands fa-telegram" aria-label="Telgram icon"></a>
+          <p> <a href="https://t.me/TradingBreakellrZ" class="fa-brands fa-telegram"></a>
             Follow on Telegram for trade examples</p>
         </div>
       </div>
@@ -120,30 +120,30 @@
     crossorigin="anonymous"></script>
 
   {% block extras %}
-  <!-- Preloads images 
-  <script type="text/javascript">
+  <!-- Preloads images -->
+  <script>
 
     var images = new Array();
-    
-    function preloadImages(){
-    
-        for (i=0; i < preloadImages.arguments.length; i++){
-    
-             images[i] = new Image();
-    
-            images[i].src = preloadImages.arguments[i];
-    
-        }
-    
+
+    function preloadImages() {
+
+      for (i = 0; i < preloadImages.arguments.length; i++) {
+
+        images[i] = new Image();
+
+        images[i].src = preloadImages.arguments[i];
+
+      }
+
     }
-    
-    preloadImages("/static/css/img/main_hero.jpg", "/static/css/img/card_2.jpg", 
-    "/static/css/img/card.jpg", "/static/css/img/card_3.jpg", "/static/css/img/faq.jpg",
-    "/static/css/img/journal_hero.jpg", "/static/css/img/login_hero.jpg", 
-    "/static/css/img/logout_hero.jpg", "/static/css/img/post_detail_hero.jpg",
-    "/static/css/img/sign_up_hero.jpg", "/static/css/img/checklist_hero.jpg" );
-    
-    </script> -->
+
+    preloadImages("/static/css/img/main_hero.webp", "/static/css/img/card_2.jpg",
+      "/static/css/img/card.jpg", "/static/css/img/card_3.jpg", "/static/css/img/faq.webp",
+      "/static/css/img/journal_hero.webp", "/static/css/img/login_hero.webp",
+      "/static/css/img/logout_hero.webp", "/static/css/img/post_detail_hero.webp",
+      "/static/css/img/sign_up_hero.webp", "/static/css/img/checklist_hero.webp");
+
+  </script>
   {% endblock %}
 </body>
 

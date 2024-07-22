@@ -320,6 +320,110 @@ Text was either black or white. Giving it a clean aesthetic. I used Blue for the
 
 # **4. Features**
 
+**There was numerous features to impliment in this project. Here is a full rundown of all the features:**
+
+#### **Header** #### 
+- The header was incorporated using Bootstrap. It contains the TraderBase logo on the left hand-side, along with the links to various pages on the right hand-side. Depending if users are logged in or not, certain links will be shown and certain links will not be shown. Home, signup, and login are shown when users are not logged in. Home, Journal, Checklist, and logout are shown if users are signed in.
+
+![HEADER](/documentation/header_pp4.png)
+
+#### **Footer** #### 
+- The footer is at the bottom of each page. It consists of a warning letting people know this is not real financial advice, a traderbase copyright symbol, and a link for users to follow me on Telgram for more trade ideas. It has a white background like the header. 
+
+![Footer](/documentation/footer_pp4.png)
+
+#### **Favicon** #### 
+- I used a money heist favicon to fit the theme. This is to show users that they are on the TraderBase website if they have a lot of tabs open.
+
+![Favicon](/documentation/favicon.png)
+
+#### **Landing page** #### 
+- The landing page is to give users a clear indication of to what this website is all about. A big clear Welcome to traderbase message on the landing page along with some text to provide users with knowledge as to what this website provides.
+
+![Landing page](/documentation/lading_page.png)
+
+
+#### **Pop up message : Lets users know if they are logged in or not** #### 
+- The pop up messages are used a number of times in this website. Messages appear on the landing page, journal page, and checklist page. This will either tell users if they are logged in or not, or they will also pop up when users post a comment, update or delete a comment, input something new for their checklist, and if they update or delete something on their checklists.
+
+![Pop up messages](/documentation/pop_up_checklist.png)
+
+![Pop up messages](/documentation/pop_up_comment.png)
+
+![Pop up messages](/documentation/pop_up_message.png)
+
+#### **What to expect** #### 
+- Here we have a what to expect feature. This area of the home page provides users with what they should expect from the TraderBase website. Cards were used for these along with text for users to read.
+
+![What to expect](/documentation/what_to_expect.png)
+
+#### **FAQ** #### 
+- Next we have our FAQ feature. An accordian is used here with bootstap for our faq section. Three big questions are asked and answered for our users,
+
+![FAQ](/documentation/faq_feature.png)
+
+
+#### **Journal - Next/Previous buttons/ View Journal entry features** #### 
+- Our Journal feature is next. On the Journal page you can see a list of Journal entries from me that have been looped through. Users can see three Journal entries and then can click 'Next' to see paginate through the Journal entries. 'Next' and 'previous' buttons are used here to go back and fort between Journal entries. Once a user clicks on a Journal entry via the 'view Journal Entry button' it will take them to the post_detail.html page where they will see the Journal entrys content.
+
+![Journal feature](/documentation/journal_feature.png)
+
+
+#### **Journal details/content** #### 
+- The Journal page consits of a title, watchlist, type of news, and what exact news. Then comes the main content of the Journal entry, alongside a picture of a chart for users to see. 
+
+![Journal entry](/documentation/journal_feature_entry.png)
+
+#### **Post_detail/Journal entry comment** #### 
+- In our Journal entries, users can view comments, and comment on each individual posts. If a user comments, they have to wait for approval by the admin of the site. They are notifed of this. Users can also Edit their comment and Delete their comments. This will be notified to them also.
+
+![](/documentation/comment_feature.png)
+
+
+#### **Modal pop up for comment deletion** #### 
+- If users decide they want to delete their comments, once they click the delete button a modal will pop up asking users if they are sure that they want to delete their comment.
+
+![](/documentation/delete_comment_modal.png)
+
+
+
+#### **Checklist input** #### 
+- The checklist feature is for users to input a list of protocols that they should check off before entering a trade.
+There is an input field for users to add whichever protocol they want to add to their checklist. Each cehcklist is individual for each user.
+
+![Checklist](/documentation/trade_checklist_feature.png)
+
+#### **Checklist update/delete** #### 
+- Users can update and delete their protocols inside their checklists. There is an update and delete button for each input they do. Users are taking to an update input field if they click update, and a delete page to make sure they want to delete said input.
+
+![Update Delete feature](/documentation/update_delete_feature.png)
+
+![Update feature](/documentation/update_feature.png)
+
+![Delete feature](/documentation/delete_feature.png)
+
+
+#### **Strike through completed checklist inputs** #### 
+- If users have ticked off one of there inputs, a strike will be put through that input to show users they have checked that protocol off.
+
+![Strike through checked off inputs](/documentation/checked_off_checklist_feature.png)
+
+#### **Signup** #### 
+- Signup feature is used for users to sign up. They need to input the correct details or they will get errors and wont be able to sign up. This is all done by using 'allauth'.
+
+![](/documentation/sign_up_feature.png)
+
+
+#### **Login** #### 
+- Users can login via login form. Done using 'allauth'.
+
+![](/documentation/login_feature.png)
+
+
+#### **Logout** #### 
+- Users can logout via logout form. Done using 'allauth'.
+
+![](/documentation/logout_feature.png)
 
 
 ## **4.1. Future Features**
