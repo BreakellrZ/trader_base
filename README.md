@@ -2,7 +2,7 @@
 
 - TraderBase is a website for Forex traders who would like to follow along with a Funded ICT Trader. I decided to make this website for all ICT traders out there who would like to gain information and knowledge, while following my journey via a Journal blog. In my Journal I will be providing daily and weekly analysis. (ICT trading is a style of trading from a trader called ICT) Each blog post will contain chart examples and text explaining what my thought proccess is for each day and each week. I will be showing trade examples, useful information, and trading models for users who signup. I wanted to give a 'Money Heist' vibe to my website beacuse I believe trading is like a money heist. We are entering the market ready to start a heist and take money out of the market for ourselves. Alongside the Journal, there is a checklist feature for all users who have signed up. This checklist is to be used for your trades. Each user has their own indivdual checklist they can use. All users have to do is go to the checklist page, and enter in what they believe needs to be checked off before they enter a trade.
 
-![TraderBase live link]()
+![TraderBase live link](https://trading-blog-00d34b8310fc.herokuapp.com/)
 
 ![Am I responsive image](documentation/am_i_responsive_pp4.png)
 
