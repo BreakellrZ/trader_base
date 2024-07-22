@@ -533,8 +533,8 @@ I have a lot of Ideas for future features for TraderBase. My main two ideas incl
 
  ![Signup erros due to allauth.](/documentation/signup_allauth_errors.png)
 
- - post_detail.html : **Attribute errors pop up. EXPLAIN HERE**
- ![](/documentation/)
+ - post_detail.html : I keep getting an attribute error that pops up saying comment_id is not allowed. I followed the I think therefore I blog walkthrough but could not find the error. The update functions works perfectly otherwise. 
+ ![Attribute error](/documentation/attribute_error.png)
 
  - base.html : No errors found 
 
@@ -638,7 +638,7 @@ Others were more complex.
         checkbox.author = request.user
         checkbox.save()
 
-- There was a couple of erros/bugs found during the html validation. One of these was for the post_detail page. I was getting 'Error: Attribute comment_id not allowed on element button at this point.' for each comment that was registered. I figured out that I needed to use data-comment_id instead of comment_id for the button element.
+- There was a couple of erros/bugs found during the html validation. One of these was for the post_detail page. I was getting 'Error: Attribute comment_id not allowed on element button at this point.' for each comment that was registered. I could not figure this out on time, even with tutor support.
 <details>
 <summary> Error: Attribute comment_id not allowed on element button at this point</summary>
 
