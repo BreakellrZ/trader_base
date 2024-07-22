@@ -528,11 +528,12 @@ I have a lot of Ideas for future features for TraderBase. My main two ideas incl
 
  ![Journal post html validator](/documentation/journal_html_validator.png)
 
- - Signup.html : 4 erros found - **All due to Allauth recent releases.** I can not fix these errors as its due to the framework.
+ - Signup.html : 4 erros found - **All due to allauth recent releases.** I can not fix these errors as its due to allauth.
 
- ![Signup erros due to Allauth.](/documentation/signup_allauth_errors.png)
+ ![Signup erros due to allauth.](/documentation/signup_allauth_errors.png)
 
  - post_detail.html : **Attribute errors pop up. EXPLAIN HERE**
+ ![](/documentation/)
 
  - base.html : No errors found 
 

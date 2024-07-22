@@ -37,7 +37,7 @@ class Journal(models.Model):
         User, on_delete=models.CASCADE, related_name="trading_blog_posts"
     )
     content = models.TextField()
-    date = models.DateField(auto_now=True)
+    date = models.DateTimeField(auto_now_add=True)
     status = models.IntegerField(choices=STATUS, default=0)
     excerpt = models.TextField(blank=True)
     watchlist = models.CharField(
