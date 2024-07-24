@@ -2,7 +2,7 @@
 
 - TraderBase is a website for Forex traders who would like to follow along with a Funded ICT Trader. I decided to make this website for all ICT traders out there who would like to gain information and knowledge, while following my journey via a Journal blog. In my Journal I will be providing daily and weekly analysis. (ICT trading is a style of trading from a trader called ICT) Each blog post will contain chart examples and text explaining what my thought proccess is for each day and each week. I will be showing trade examples, useful information, and trading models for users who signup. I wanted to give a 'Money Heist' vibe to my website beacuse I believe trading is like a money heist. We are entering the market ready to start a heist and take money out of the market for ourselves. Alongside the Journal, there is a checklist feature for all users who have signed up. This checklist is to be used for your trades. Each user has their own indivdual checklist they can use. All users have to do is go to the checklist page, and enter in what they believe needs to be checked off before they enter a trade.
 
-![TraderBase live link](https://trading-blog-00d34b8310fc.herokuapp.com/)
+[TraderBase live link](https://trading-blog-00d34b8310fc.herokuapp.com/)
 
 ![Am I responsive image](documentation/am_i_responsive_pp4.png)
 
@@ -533,8 +533,7 @@ I have a lot of Ideas for future features for TraderBase. My main two ideas incl
 
  ![Signup erros due to allauth.](/documentation/signup_allauth_errors.png)
 
- - post_detail.html : I keep getting an attribute error that pops up saying comment_id is not allowed. I followed the I think therefore I blog walkthrough but could not find the error. The update functions works perfectly otherwise. 
- ![Attribute error](/documentation/attribute_error.png)
+ - post_detail.html : No errors found 
 
  - base.html : No errors found 
 
@@ -638,7 +637,7 @@ Others were more complex.
         checkbox.author = request.user
         checkbox.save()
 
-- There was a couple of erros/bugs found during the html validation. One of these was for the post_detail page. I was getting 'Error: Attribute comment_id not allowed on element button at this point.' for each comment that was registered. I could not figure this out on time, even with tutor support.
+- There was a couple of erros/bugs found during the html validation. One of these was for the post_detail page. I was getting 'Error: Attribute comment_id not allowed on element button at this point.' for each comment that was registered. I had to change the attribute from comment_id to data-comment_id in my comment.js and post_detail.html files to fix this.
 <details>
 <summary> Error: Attribute comment_id not allowed on element button at this point</summary>
 
