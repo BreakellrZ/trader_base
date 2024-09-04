@@ -5,6 +5,7 @@
 
 <!-- Delete section-->
 <section id="update_checklist">
+    {% if user.is_authenticated %}
     <div class="container my-5 py-5">
         <div class="row justify-content-center align-items-center  text-align-center">
             <div class="col-md-8 card">
@@ -24,6 +25,13 @@
             </div>
         </div>
     </div>
+    {% else %}
+    <div class="d-flex justify-content-center">
+      <a href="{% url 'account_login' %}"
+        class="btn text-primary justify-content-center btn-lg align-items-center text-center"> <u>Log in to use
+          Checklist </u></a>
+    </div>
+    {% endif %}
 </section>
 
 
