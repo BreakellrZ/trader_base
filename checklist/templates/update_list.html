@@ -27,8 +27,10 @@
     </div>
     {% else %}
     <div class="d-flex justify-content-center">
+        <h3 class="my-2">You are not logged in - You must be registered to use this feature</h3>
       <a href="{% url 'account_login' %}"
-        class="btn text-primary justify-content-center btn-lg align-items-center text-center"> <u>Log in to use
+        class="btn text-primary justify-content-center btn-lg align-items-center text-center"> 
+        <u>Log in to use
           Checklist </u></a>
     </div>
     {% endif %}
