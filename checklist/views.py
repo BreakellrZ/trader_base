@@ -1,7 +1,8 @@
 from django.shortcuts import render, redirect, get_object_or_404, reverse
 from django.contrib import messages
-from django.http import HttpResponseRedirect
+from django.http import HttpResponseForbidden
 from django.contrib.auth.decorators import login_required
+from django.contrib.auth.models import User
 from .models import Checkbox
 from .forms import ListForm
 
@@ -14,6 +15,7 @@ def list(request):
     Each user sees their own checklist
     """
     checklist = Checkbox.objects.filter(author=request.user)
+
     form = ListForm()
 
     if request.method == 'POST':
@@ -29,6 +31,7 @@ def list(request):
 
 
 # View to update checklist inputs
+@login_required
 def updateList(request, pk):
     """
     When user clickes update, goes to update_list.html.
@@ -36,6 +39,12 @@ def updateList(request, pk):
     Displays update message once redirected back to /tradingcheck/list page.
     """
     list = Checkbox.objects.get(id=pk)
+
+    if list.author != request.user:
+        messages.add_message(
+                request, messages.ERROR,
+                'You do not have permission to look at this checklist!')
+        return redirect('/tradingcheck/list/')
 
     form = ListForm(instance=list)
 
@@ -53,6 +62,7 @@ def updateList(request, pk):
 
 
 # View to delete checklist inputs
+@login_required
 def deleteList(request, pk):
     """
     When user clicks delete button,
@@ -60,6 +70,12 @@ def deleteList(request, pk):
     Displays delete message once redirected back to /tradingcheck/list page.
     """
     item = Checkbox.objects.get(id=pk)
+
+    if item.author != request.user:
+        messages.add_message(
+                request, messages.ERROR,
+                'You do not have permission to look at this checklist!')
+        return redirect('/tradingcheck/list/')
 
     if request.method == 'POST':
         item.delete()
